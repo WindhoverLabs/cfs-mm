@@ -1,15 +1,15 @@
 # Doxyfile 1.5.4
 @INCLUDE_PATH=../docs/dox_src/mnem_maps \
-              $(CFS_APP_SRC)/$(APPTARGET)/docs/dox_src/mnem_maps
-@INCLUDE=cfs_$(APPTARGET)_cmd_mnem_map
-@INCLUDE=cfs_$(APPTARGET)_tlm_mnem_map
+              $(CFS_APP_SRC)/@APPTARGET@/docs/dox_src/mnem_maps
+@INCLUDE=cfs_@APPTARGET@_cmd_mnem_map
+@INCLUDE=cfs_@APPTARGET@_tlm_mnem_map
 #---------------------------------------------------------------------------
 # Project related configuration options
 #---------------------------------------------------------------------------
 #DOXYFILE_ENCODING      = UTF-8
-PROJECT_NAME           = "CFS Memory Manager (MM) Application on $(CPUNAME) User's Guide"
+PROJECT_NAME           = "CFS Memory Manager (MM) Application on $(CPUNAME) Detailed Design"
 PROJECT_NUMBER         = 
-OUTPUT_DIRECTORY       = ../docs/users_guide/html/$(APPTARGET)
+OUTPUT_DIRECTORY       = docs/detailed_design/html/@APPTARGET@
 CREATE_SUBDIRS         = NO
 OUTPUT_LANGUAGE        = English
 BRIEF_MEMBER_DESC      = YES
@@ -27,7 +27,7 @@ MULTILINE_CPP_IS_BRIEF = NO
 DETAILS_AT_TOP         = NO
 INHERIT_DOCS           = YES
 SEPARATE_MEMBER_PAGES  = NO
-TAB_SIZE               = 8
+TAB_SIZE               = 4
 ALIASES               += "event=\xrefitem cfeevents \"Event Message\" \"Memory Manager Event Message Cross Reference\" "
 ALIASES               += "retdesc=<TD WIDTH=\"80%\"> "
 ALIASES               += "retcode=<TR><TD WIDTH=\"20%\" VALIGN=TOP> "
@@ -92,17 +92,13 @@ WARN_LOGFILE           =
 #---------------------------------------------------------------------------
 # configuration options related to the input files
 #---------------------------------------------------------------------------
-INPUT                  = $(CFS_APP_SRC)/$(APPTARGET)/docs/dox_src/users_guide/cfs_$(APPTARGET).dox
-INPUT                 += $(CFS_APP_SRC)/$(APPTARGET)/fsw/src/$(APPTARGET)_msgdefs.h 
-INPUT                 += $(CFS_APP_SRC)/$(APPTARGET)/fsw/src/$(APPTARGET)_msg.h 
-INPUT                 += $(CFS_APP_SRC)/$(APPTARGET)/fsw/src/$(APPTARGET)_filedefs.h 
-INPUT                 += $(CFS_APP_SRC)/$(APPTARGET)/fsw/src/$(APPTARGET)_dump.h 
-INPUT                 += $(CFS_APP_SRC)/$(APPTARGET)/fsw/src/$(APPTARGET)_events.h 
-INPUT                 += $(CFS_APP_SRC)/$(APPTARGET)/fsw/src/$(APPTARGET)_version.h 
-INPUT                 += $(CFS_APP_SRC)/cfs_lib/fsw/public_inc/cfs_utils.h 
-INPUT                 += ../../mission_inc/$(APPTARGET)_perfids.h 
-INPUT                 += ../inc/$(APPTARGET)_msgids.h 
-INPUT                 += ../inc/$(APPTARGET)_platform_cfg.h 
+INPUT                  = $(CFS_APP_SRC)/@APPTARGET@/docs/dox_src/detailed_design/cfs_@APPTARGET@.dox
+#INPUT                 += $(CFS_APP_SRC)/@APPTARGET@/fsw/public_inc 
+INPUT                 += ../../mission_inc/@APPTARGET@_perfids.h 
+#INPUT                 += ../../mission_inc/@APPTARGET@_mission_cfg.h
+INPUT                 += ../inc/@APPTARGET@_msgids.h 
+INPUT                 += ../inc/@APPTARGET@_platform_cfg.h
+INPUT                 += $(CFS_APP_SRC)/@APPTARGET@/fsw/src 
 #INPUT_ENCODING         = UTF-8
 FILE_PATTERNS          = *.c \
                          *.h
@@ -115,7 +111,7 @@ EXAMPLE_PATH           =
 EXAMPLE_PATTERNS       = *
 EXAMPLE_RECURSIVE      = NO
 IMAGE_PATH             = "./"
-IMAGE_PATH            += "$(CFS_APP_SRC)/$(APPTARGET)/docs/dox_src/users_guide/"
+IMAGE_PATH            += "$(CFS_APP_SRC)/@APPTARGET@/docs/dox_src/detailed_design/"
 INPUT_FILTER           = 
 FILTER_PATTERNS        = 
 FILTER_SOURCE_FILES    = NO
@@ -160,8 +156,8 @@ TREEVIEW_WIDTH         = 250
 #---------------------------------------------------------------------------
 # configuration options related to the LaTeX output
 #---------------------------------------------------------------------------
-GENERATE_LATEX         = NO
-LATEX_OUTPUT           = ../../../latex/$(CPUNAME)/$(APPTARGET)
+GENERATE_LATEX         = YES
+LATEX_OUTPUT           = ../../latex/@APPTARGET@
 LATEX_CMD_NAME         = latex
 MAKEINDEX_CMD_NAME     = makeindex
 COMPACT_LATEX          = YES
@@ -176,7 +172,7 @@ LATEX_HIDE_INDICES     = NO
 # configuration options related to the RTF output
 #---------------------------------------------------------------------------
 GENERATE_RTF           = NO
-RTF_OUTPUT             = ../../../rtf/$(CPUNAME)/$(APPTARGET)
+RTF_OUTPUT             = ../../rtf/@APPTARGET@
 COMPACT_RTF            = YES
 RTF_HYPERLINKS         = NO
 RTF_STYLESHEET_FILE    = 
@@ -227,7 +223,7 @@ SKIP_FUNCTION_MACROS   = YES
 # Configuration::additions related to external references   
 #---------------------------------------------------------------------------
 TAGFILES               = ../cfe/cfe.tag=../cfe
-GENERATE_TAGFILE       = $(APPTARGET).tag
+GENERATE_TAGFILE       = @APPTARGET@.tag
 ALLEXTERNALS           = NO
 EXTERNAL_GROUPS        = YES
 PERL_PATH              = /usr/bin/perl
@@ -243,10 +239,10 @@ COLLABORATION_GRAPH    = NO
 GROUP_GRAPHS           = YES
 UML_LOOK               = NO
 TEMPLATE_RELATIONS     = NO
-INCLUDE_GRAPH          = NO
-INCLUDED_BY_GRAPH      = NO
+INCLUDE_GRAPH          = YES
+INCLUDED_BY_GRAPH      = YES
 CALL_GRAPH             = YES
-CALLER_GRAPH           = NO
+CALLER_GRAPH           = YES
 GRAPHICAL_HIERARCHY    = NO
 DIRECTORY_GRAPH        = YES
 DOT_IMAGE_FORMAT       = png
