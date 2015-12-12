@@ -37,9 +37,9 @@ target_link_libraries(MM-UT -fprofile-arcs gcov ${CMAKE_THREAD_LIBS_INIT})
 add_test(NAME mm-ut
     COMMAND ${CMAKE_COMMAND}
     	-DTEST_PROG=$<TARGET_FILE:MM-UT>
-    	-DEXPECTED_OUTPUT=${UNIT_TEST_INPUT_DIR}/mm_utf_test.out
+    	-DEXPECTED_OUTPUT=${CMAKE_CURRENT_SOURCE_DIR}/mm_utf_test.out
     	-DACTUAL_OUTPUT=${CMAKE_CURRENT_BINARY_DIR}/mm_utf_test.out
     -P ${CMAKE_CURRENT_SOURCE_DIR}/runtest.cmake)
 
 # Copy input files to build directory
-configure_file(${UNIT_TEST_INPUT_DIR}/mm_utf_cmds.in ${CMAKE_CURRENT_BINARY_DIR} COPYONLY)
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/mm_utf_cmds.in ${CMAKE_CURRENT_BINARY_DIR} COPYONLY)
