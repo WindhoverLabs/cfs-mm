@@ -5,6 +5,10 @@ set( MEMORYCHECK_COMMAND_OPTIONS "--trace-children=yes --leak-check=full" )
 
 # Set include directories
 include_directories(
+	../mission_inc
+	../platform_inc
+	$ENV{CFE_DIR}/fsw/mission_inc
+	$ENV{CFE_DIR}/fsw/platform_inc/cpu1
 	${CMAKE_CURRENT_SOURCE_DIR}
 	${CFE_INC_DIRS}
 	${OSAL_INC_DIRS}
@@ -34,12 +38,7 @@ target_link_libraries(MM-UT -fprofile-arcs gcov ${CMAKE_THREAD_LIBS_INIT})
 
 # We need to both run the test and compare the as-run with the expected output
 # with a diff command. 
-add_test(NAME mm-ut
-    COMMAND ${CMAKE_COMMAND}
-    	-DTEST_PROG=$<TARGET_FILE:MM-UT>
-    	-DEXPECTED_OUTPUT=${CMAKE_CURRENT_SOURCE_DIR}/mm_utf_test.out
-    	-DACTUAL_OUTPUT=${CMAKE_CURRENT_BINARY_DIR}/mm_utf_test.out
-    -P ${CMAKE_CURRENT_SOURCE_DIR}/runtest.cmake)
+add_test(NAME mm-ut COMMAND $<TARGET_FILE:MM-UT>)
 
 # Copy input files to build directory
 file(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/ram)

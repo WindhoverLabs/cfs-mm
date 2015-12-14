@@ -2,7 +2,7 @@
 ** File:
 **   $Id: ut_mm_test_pokes.c 1.2 2015/03/02 14:26:50EST sstrege Exp  $
 **
-**   Copyright © 2007-2014 United States Government as represented by the 
+**   Copyright ï¿½ 2007-2014 United States Government as represented by the 
 **   Administrator of the National Aeronautics and Space Administration. 
 **   All Other Rights Reserved.  
 **
@@ -178,7 +178,7 @@ void Test_Pokes(void)
    ** Test EEPROM 32 bit poke with error return from
    ** OS_EepromWrite32
    */
-   UTF_PSP_set_function_hook(CFE_PSP_EEPROMWRITE32_HOOK, 
+   UTF_PSP_set_function_hook(CFE_PSP_EEPROMWRITE32_HOOK,
                              OS_EepromWrite32_Hook);
 
    UTF_put_text("Test EEPROM Poke 32 with OS_EepromWrite32 error return \n");

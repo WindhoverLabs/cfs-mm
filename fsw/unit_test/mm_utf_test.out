@@ -1,9 +1,10 @@
 UTF Info: Return value for cFE PSP Api #5 set to 0
 UTF Info: Return value for cFE PSP Api #6 set to 0
 UTF Info: Task <MM> added to Task Tbl.
-SysLog:1980-090-00:49:56.99999 ES Startup: MM loaded and created
+SysLog:1980-001-00:00:00.00000 ES Startup: MM loaded and created
 UTF Info: App <MM> added to App Tbl.
-CFS Lib Initialized.  Version 0.0.0.0
+CFS Lib Initialized.  Version 2.2.0.0
+
 ***UTF MM DRIVER TESTS START***
 
 
@@ -21,7 +22,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_NOACTION
    Memory Type             = MM_NOMEMTYPE
    Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
@@ -34,7 +35,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_NOACTION
    Memory Type             = MM_NOMEMTYPE
    Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
@@ -47,7 +48,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_NOACTION
    Memory Type             = MM_NOMEMTYPE
    Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
@@ -60,7 +61,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_NOACTION
    Memory Type             = MM_NOMEMTYPE
    Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
@@ -73,7 +74,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_NOACTION
    Memory Type             = MM_NOMEMTYPE
    Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
@@ -86,47 +87,47 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_NOACTION
    Memory Type             = MM_NOMEMTYPE
    Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
 Test EEPROM Poke 32 with OS_EepromWrite32 error return 
 -------------------------------------------------------
-ERROR EVENT ID=30 CFE_PSP_EepromWrite32 error received: RC = 0xFFFFFFFC Addr = 0xC0000000
+ERROR EVENT ID=30 CFE_PSP_EepromWrite32 error received: RC = 0xFFFFFFFC, Addr = 0xC0000000
 MM HOUSEKEEPING DATA:
    Command Counter         = 0
    Command Error Counter   = 7
-   Last Action             = MM_POKE
-   Memory Type             = MM_EEPROM
-   Address                 = 0xC0000000
-   Fill Pattern            = 0x00000000
+   Last Action             = MM_NOACTION
+   Memory Type             = MM_NOMEMTYPE
+   Address                 = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
 Test EEPROM Poke 16 with OS_EepromWrite16 error return 
 -------------------------------------------------------
-ERROR EVENT ID=29 CFE_PSP_EepromWrite16 error received: RC = 0xFFFFFFFC Addr = 0xC0000000
+ERROR EVENT ID=29 CFE_PSP_EepromWrite16 error received: RC = 0xFFFFFFFC, Addr = 0xC0000000
 MM HOUSEKEEPING DATA:
    Command Counter         = 0
    Command Error Counter   = 8
-   Last Action             = MM_POKE
-   Memory Type             = MM_EEPROM
-   Address                 = 0xC0000000
-   Fill Pattern            = 0x00000000
+   Last Action             = MM_NOACTION
+   Memory Type             = MM_NOMEMTYPE
+   Address                 = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
 UTF Info: Return value for cFE PSP Api #2 set to 0
 Test EEPROM Poke 8 with OS_EepromWrite8 error return 
 -----------------------------------------------------
-ERROR EVENT ID=28 CFE_PSP_EepromWrite8 error received: RC = 0xFFFFFFFC Addr = 0xC0000000
+ERROR EVENT ID=28 CFE_PSP_EepromWrite8 error received: RC = 0xFFFFFFFC, Addr = 0xC0000000
 MM HOUSEKEEPING DATA:
    Command Counter         = 0
    Command Error Counter   = 9
-   Last Action             = MM_POKE
-   Memory Type             = MM_EEPROM
-   Address                 = 0xC0000000
-   Fill Pattern            = 0x00000000
+   Last Action             = MM_NOACTION
+   Memory Type             = MM_NOMEMTYPE
+   Address                 = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
@@ -137,10 +138,10 @@ ERROR EVENT ID=19 Invalid memory type specified: MemType = 255
 MM HOUSEKEEPING DATA:
    Command Counter         = 0
    Command Error Counter   = 10
-   Last Action             = MM_POKE
-   Memory Type             = MM_EEPROM
-   Address                 = 0xC0000000
-   Fill Pattern            = 0x00000000
+   Last Action             = MM_NOACTION
+   Memory Type             = MM_NOMEMTYPE
+   Address                 = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
@@ -150,10 +151,10 @@ ERROR EVENT ID=22 Data size in bits invalid: Data Size = 16
 MM HOUSEKEEPING DATA:
    Command Counter         = 0
    Command Error Counter   = 11
-   Last Action             = MM_POKE
-   Memory Type             = MM_EEPROM
-   Address                 = 0xC0000000
-   Fill Pattern            = 0x00000000
+   Last Action             = MM_NOACTION
+   Memory Type             = MM_NOMEMTYPE
+   Address                 = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
@@ -163,10 +164,10 @@ ERROR EVENT ID=25 CFE_PSP_MemValidateRange error received: RC = 0xFFFFFFEB Addr 
 MM HOUSEKEEPING DATA:
    Command Counter         = 0
    Command Error Counter   = 12
-   Last Action             = MM_POKE
-   Memory Type             = MM_EEPROM
-   Address                 = 0xC0000000
-   Fill Pattern            = 0x00000000
+   Last Action             = MM_NOACTION
+   Memory Type             = MM_NOMEMTYPE
+   Address                 = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
@@ -176,10 +177,10 @@ ERROR EVENT ID=22 Data size in bits invalid: Data Size = 32
 MM HOUSEKEEPING DATA:
    Command Counter         = 0
    Command Error Counter   = 13
-   Last Action             = MM_POKE
-   Memory Type             = MM_EEPROM
-   Address                 = 0xC0000000
-   Fill Pattern            = 0x00000000
+   Last Action             = MM_NOACTION
+   Memory Type             = MM_NOMEMTYPE
+   Address                 = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
@@ -189,10 +190,10 @@ ERROR EVENT ID=25 CFE_PSP_MemValidateRange error received: RC = 0xFFFFFFEB Addr 
 MM HOUSEKEEPING DATA:
    Command Counter         = 0
    Command Error Counter   = 14
-   Last Action             = MM_POKE
-   Memory Type             = MM_EEPROM
-   Address                 = 0xC0000000
-   Fill Pattern            = 0x00000000
+   Last Action             = MM_NOACTION
+   Memory Type             = MM_NOMEMTYPE
+   Address                 = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
@@ -202,145 +203,145 @@ ERROR EVENT ID=22 Data size in bits invalid: Data Size = 16
 MM HOUSEKEEPING DATA:
    Command Counter         = 0
    Command Error Counter   = 15
-   Last Action             = MM_POKE
-   Memory Type             = MM_EEPROM
-   Address                 = 0xC0000000
-   Fill Pattern            = 0x00000000
+   Last Action             = MM_NOACTION
+   Memory Type             = MM_NOMEMTYPE
+   Address                 = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
 Test MEM8 Poke With Invalid Address 
 ------------------------------------
-ERROR EVENT ID=25 CFE_PSP_MemValidateRange error received: RC = 0xFFFFFFE9 Addr = 0xD0000000 Size = 1 MemType = 1
+ERROR EVENT ID=25 CFE_PSP_MemValidateRange error received: RC = 0xFFFFFFEB Addr = 0xD0000000 Size = 1 MemType = 1
 MM HOUSEKEEPING DATA:
    Command Counter         = 0
    Command Error Counter   = 16
-   Last Action             = MM_POKE
-   Memory Type             = MM_EEPROM
-   Address                 = 0xC0000000
-   Fill Pattern            = 0x00000000
+   Last Action             = MM_NOACTION
+   Memory Type             = MM_NOMEMTYPE
+   Address                 = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
 Test RAM Poke 32 
 -----------------
-INFO EVENT ID=12 Poke Command: Addr = 0xB0000000 Size = 32 bits Data = 0x1234ABCD
+INFO EVENT ID=12 Poke Command: Addr = 0xB0000000, Size = 32 bits, Data = 0x1234ABCD
 MM HOUSEKEEPING DATA:
    Command Counter         = 1
    Command Error Counter   = 16
    Last Action             = MM_POKE
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x1234ABCD
    Bytes Processed         = 4
    File Name               = ''
 
 Test RAM Poke 16 
 -----------------
-INFO EVENT ID=11 Poke Command: Addr = 0xB0000000 Size = 16 bits Data = 0xBA98
+INFO EVENT ID=11 Poke Command: Addr = 0xB0000000, Size = 16 bits, Data = 0xBA98
 MM HOUSEKEEPING DATA:
    Command Counter         = 2
    Command Error Counter   = 16
    Last Action             = MM_POKE
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000BA98
    Bytes Processed         = 2
    File Name               = ''
 
 UTF Info: Return value for cFE PSP Api #2 set to 0
 Test RAM Poke 8 
 ----------------
-INFO EVENT ID=10 Poke Command: Addr = 0xB0000000 Size = 8 bits Data = 0x4D
+INFO EVENT ID=10 Poke Command: Addr = 0xB0000000, Size = 8 bits, Data = 0x4D
 MM HOUSEKEEPING DATA:
    Command Counter         = 3
    Command Error Counter   = 16
    Last Action             = MM_POKE
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1
    File Name               = ''
 
 UTF Info: Return code for cFE PSP Api #2 returned to default
 Test EEPROM Poke 32 
 --------------------
-INFO EVENT ID=12 Poke Command: Addr = 0xC0000000 Size = 32 bits Data = 0x1234ABCD
+INFO EVENT ID=12 Poke Command: Addr = 0xC0000000, Size = 32 bits, Data = 0x1234ABCD
 MM HOUSEKEEPING DATA:
    Command Counter         = 4
    Command Error Counter   = 16
    Last Action             = MM_POKE
    Memory Type             = MM_EEPROM
    Address                 = 0xC0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x1234ABCD
    Bytes Processed         = 4
    File Name               = ''
 
 Test EEPROM Poke 16 
 --------------------
-INFO EVENT ID=11 Poke Command: Addr = 0xC0000000 Size = 16 bits Data = 0xBA98
+INFO EVENT ID=11 Poke Command: Addr = 0xC0000000, Size = 16 bits, Data = 0xBA98
 MM HOUSEKEEPING DATA:
    Command Counter         = 5
    Command Error Counter   = 16
    Last Action             = MM_POKE
    Memory Type             = MM_EEPROM
    Address                 = 0xC0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000BA98
    Bytes Processed         = 2
    File Name               = ''
 
 UTF Info: Return value for cFE PSP Api #2 set to 0
 Test EEPROM Poke 8 
 -------------------
-INFO EVENT ID=10 Poke Command: Addr = 0xC0000000 Size = 8 bits Data = 0x4D
+INFO EVENT ID=10 Poke Command: Addr = 0xC0000000, Size = 8 bits, Data = 0x4D
 MM HOUSEKEEPING DATA:
    Command Counter         = 6
    Command Error Counter   = 16
    Last Action             = MM_POKE
    Memory Type             = MM_EEPROM
    Address                 = 0xC0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1
    File Name               = ''
 
 UTF Info: Return code for cFE PSP Api #2 returned to default
 Test MEM32 Poke 
 ----------------
-INFO EVENT ID=12 Poke Command: Addr = 0xB0000000 Size = 32 bits Data = 0x1234ABCD
+INFO EVENT ID=12 Poke Command: Addr = 0xB0000000, Size = 32 bits, Data = 0x1234ABCD
 MM HOUSEKEEPING DATA:
    Command Counter         = 7
    Command Error Counter   = 16
    Last Action             = MM_POKE
    Memory Type             = MM_MEM32
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x1234ABCD
    Bytes Processed         = 4
    File Name               = ''
 
 Test MEM16 Poke 
 ----------------
-INFO EVENT ID=11 Poke Command: Addr = 0xB0000000 Size = 16 bits Data = 0xBA98
+INFO EVENT ID=11 Poke Command: Addr = 0xB0000000, Size = 16 bits, Data = 0xBA98
 MM HOUSEKEEPING DATA:
    Command Counter         = 8
    Command Error Counter   = 16
    Last Action             = MM_POKE
    Memory Type             = MM_MEM16
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000BA98
    Bytes Processed         = 2
    File Name               = ''
 
 UTF Info: Return value for cFE PSP Api #2 set to 0
 Test MEM8 Poke 
 ----------------
-INFO EVENT ID=10 Poke Command: Addr = 0xB0000000 Size = 8 bits Data = 0x4D
+INFO EVENT ID=10 Poke Command: Addr = 0xB0000000, Size = 8 bits, Data = 0x4D
 MM HOUSEKEEPING DATA:
    Command Counter         = 9
    Command Error Counter   = 16
    Last Action             = MM_POKE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1
    File Name               = ''
 
@@ -360,7 +361,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_POKE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1
    File Name               = ''
 
@@ -374,7 +375,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_PEEK
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x1234BA4D
    Bytes Processed         = 4
    File Name               = ''
 
@@ -387,7 +388,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_PEEK
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x1234BA4D
    Bytes Processed         = 4
    File Name               = ''
 
@@ -400,7 +401,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_PEEK
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x1234BA4D
    Bytes Processed         = 4
    File Name               = ''
 
@@ -413,7 +414,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_PEEK
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x1234BA4D
    Bytes Processed         = 4
    File Name               = ''
 
@@ -426,7 +427,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_PEEK
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x1234BA4D
    Bytes Processed         = 4
    File Name               = ''
 
@@ -439,7 +440,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_PEEK
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x1234BA4D
    Bytes Processed         = 4
    File Name               = ''
 
@@ -452,7 +453,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_PEEK
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x1234BA4D
    Bytes Processed         = 4
    File Name               = ''
 
@@ -465,7 +466,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_PEEK
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x1234BA4D
    Bytes Processed         = 4
    File Name               = ''
 
@@ -478,7 +479,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_PEEK
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x1234BA4D
    Bytes Processed         = 4
    File Name               = ''
 
@@ -491,7 +492,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_PEEK
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x1234BA4D
    Bytes Processed         = 4
    File Name               = ''
 
@@ -504,7 +505,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_PEEK
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x1234BA4D
    Bytes Processed         = 4
    File Name               = ''
 
@@ -517,20 +518,20 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_PEEK
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x1234BA4D
    Bytes Processed         = 4
    File Name               = ''
 
 Test MEM8 Peek With Invalid Address 
 ------------------------------------
-ERROR EVENT ID=25 CFE_PSP_MemValidateRange error received: RC = 0xFFFFFFE9 Addr = 0xD0000000 Size = 1 MemType = 1
+ERROR EVENT ID=25 CFE_PSP_MemValidateRange error received: RC = 0xFFFFFFEB Addr = 0xD0000000 Size = 1 MemType = 1
 MM HOUSEKEEPING DATA:
    Command Counter         = 10
    Command Error Counter   = 29
    Last Action             = MM_PEEK
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x1234BA4D
    Bytes Processed         = 4
    File Name               = ''
 
@@ -543,7 +544,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_PEEK
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x1234BA4D
    Bytes Processed         = 4
    File Name               = ''
 
@@ -556,7 +557,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_PEEK
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000BA4D
    Bytes Processed         = 2
    File Name               = ''
 
@@ -570,7 +571,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_PEEK
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1
    File Name               = ''
 
@@ -584,7 +585,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_PEEK
    Memory Type             = MM_EEPROM
    Address                 = 0xC0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x1234BA4D
    Bytes Processed         = 4
    File Name               = ''
 
@@ -597,7 +598,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_PEEK
    Memory Type             = MM_EEPROM
    Address                 = 0xC0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000BA4D
    Bytes Processed         = 2
    File Name               = ''
 
@@ -611,7 +612,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_PEEK
    Memory Type             = MM_EEPROM
    Address                 = 0xC0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1
    File Name               = ''
 
@@ -625,7 +626,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_PEEK
    Memory Type             = MM_MEM32
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x1234BA4D
    Bytes Processed         = 4
    File Name               = ''
 
@@ -638,7 +639,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_PEEK
    Memory Type             = MM_MEM16
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000BA4D
    Bytes Processed         = 2
    File Name               = ''
 
@@ -652,7 +653,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_PEEK
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1
    File Name               = ''
 
@@ -671,7 +672,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_PEEK
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1
    File Name               = ''
 
@@ -684,7 +685,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_PEEK
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1
    File Name               = ''
 
@@ -697,7 +698,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_PEEK
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1
    File Name               = ''
 
@@ -710,7 +711,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_PEEK
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1
    File Name               = ''
 
@@ -723,13 +724,13 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_PEEK
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1
    File Name               = ''
 
 Test Valid Load WID of Maximum Size 
 ------------------------------------
-IO MemCpy, Dest: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Src: 0xffebf338 [?], Size: 200
+IO MemCpy, Dest: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Src: 0xffd9fc34 [?], Size: 200
 INFO EVENT ID=4 Load Memory WID Command: Wrote 200 bytes to address: 0xB0000000
 MM HOUSEKEEPING DATA:
    Command Counter         = 20
@@ -737,13 +738,13 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_WID
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 200
    File Name               = ''
 
 Test Valid Load WID Less Than Maximum Size 
 -------------------------------------------
-IO MemCpy, Dest: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Src: 0xffebf338 [?], Size: 100
+IO MemCpy, Dest: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Src: 0xffd9fc34 [?], Size: 100
 INFO EVENT ID=4 Load Memory WID Command: Wrote 100 bytes to address: 0xB0000000
 MM HOUSEKEEPING DATA:
    Command Counter         = 21
@@ -751,7 +752,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_WID
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = ''
 
@@ -769,7 +770,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_WID
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = ''
 
@@ -782,7 +783,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_WID
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = ''
 
@@ -795,7 +796,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_WID
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = ''
 
@@ -808,7 +809,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_WID
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = ''
 
@@ -821,7 +822,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_WID
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = ''
 
@@ -834,7 +835,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_WID
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = ''
 
@@ -847,7 +848,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_WID
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = ''
 
@@ -860,7 +861,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_WID
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = ''
 
@@ -873,7 +874,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_WID
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = ''
 
@@ -886,7 +887,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_WID
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = ''
 
@@ -899,7 +900,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_WID
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = ''
 
@@ -912,7 +913,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_WID
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = ''
 
@@ -925,13 +926,13 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_WID
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = ''
 
 Test RAM Dump In Event Max Bytes 
 ---------------------------------
-IO MemCpy, Dest: 0xffebf350 [?], Src: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Size: 16
+IO MemCpy, Dest: 0xffd9fc60 [?], Src: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Size: 16
 INFO EVENT ID=14 Memory Dump: 0x1A 0x1A 0x1A 0x1A 0x1A 0x1A 0x1A 0x1A 0x1A 0x1A 0x1B 0x1B 0x1B 0x1B 0x1B 0x1B from address: 0xB0000000
 MM HOUSEKEEPING DATA:
    Command Counter         = 22
@@ -939,13 +940,13 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 16
    File Name               = ''
 
 Test RAM Dump In Event Less Than Max Bytes 
 -------------------------------------------
-IO MemCpy, Dest: 0xffebf350 [?], Src: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Size: 8
+IO MemCpy, Dest: 0xffd9fc60 [?], Src: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Size: 8
 INFO EVENT ID=14 Memory Dump: 0x1A 0x1A 0x1A 0x1A 0x1A 0x1A 0x1A 0x1A from address: 0xB0000000
 MM HOUSEKEEPING DATA:
    Command Counter         = 23
@@ -953,13 +954,13 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
 Test EEPROM Dump In Event Max Bytes 
 ------------------------------------
-IO MemCpy, Dest: 0xffebf350 [?], Src: 0xc0000000 [MM_EEPROM_ADDRESS_SPACE], Size: 16
+IO MemCpy, Dest: 0xffd9fc60 [?], Src: 0xc0000000 [MM_EEPROM_ADDRESS_SPACE], Size: 16
 INFO EVENT ID=14 Memory Dump: 0x4D 0xBA 0x34 0x12 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 from address: 0xC0000000
 MM HOUSEKEEPING DATA:
    Command Counter         = 24
@@ -967,13 +968,13 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_EEPROM
    Address                 = 0xC0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 16
    File Name               = ''
 
 Test EEPROM Dump In Event Less Than Max Bytes 
 ----------------------------------------------
-IO MemCpy, Dest: 0xffebf350 [?], Src: 0xc0000000 [MM_EEPROM_ADDRESS_SPACE], Size: 8
+IO MemCpy, Dest: 0xffd9fc60 [?], Src: 0xc0000000 [MM_EEPROM_ADDRESS_SPACE], Size: 8
 INFO EVENT ID=14 Memory Dump: 0x4D 0xBA 0x34 0x12 0x00 0x00 0x00 0x00 from address: 0xC0000000
 MM HOUSEKEEPING DATA:
    Command Counter         = 25
@@ -981,7 +982,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_EEPROM
    Address                 = 0xC0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -994,7 +995,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM32
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 16
    File Name               = ''
 
@@ -1007,7 +1008,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM32
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -1020,7 +1021,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM16
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 16
    File Name               = ''
 
@@ -1033,7 +1034,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM16
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -1046,7 +1047,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 16
    File Name               = ''
 
@@ -1059,7 +1060,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -1076,7 +1077,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -1089,7 +1090,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -1102,7 +1103,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -1115,7 +1116,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -1128,7 +1129,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -1141,7 +1142,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -1154,7 +1155,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -1167,7 +1168,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -1181,7 +1182,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -1195,7 +1196,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -1209,7 +1210,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -1223,7 +1224,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -1237,7 +1238,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -1251,7 +1252,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -1265,7 +1266,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -1279,7 +1280,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -1293,7 +1294,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -1307,7 +1308,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -1321,7 +1322,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -1335,7 +1336,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -1349,7 +1350,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -1363,7 +1364,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -1377,7 +1378,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
@@ -1391,18 +1392,18 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_INEVENT
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 8
    File Name               = ''
 
 UTF Info: Return value for OSFILEAPI Api #2 set to ffffffff
 Test RAM Load With OS_close error 
 ----------------------------------
-IO MemCpy, Dest: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Src: 0x080c3d80 [?], Size: 200
-IO MemCpy, Dest: 0xb00000c8 [MM_RAM_ADDRESS_SPACE], Src: 0x080c3d80 [?], Size: 200
-IO MemCpy, Dest: 0xb0000190 [MM_RAM_ADDRESS_SPACE], Src: 0x080c3d80 [?], Size: 200
-IO MemCpy, Dest: 0xb0000258 [MM_RAM_ADDRESS_SPACE], Src: 0x080c3d80 [?], Size: 200
-IO MemCpy, Dest: 0xb0000320 [MM_RAM_ADDRESS_SPACE], Src: 0x080c3d80 [?], Size: 200
+IO MemCpy, Dest: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Src: 0x080d222c [?], Size: 200
+IO MemCpy, Dest: 0xb00000c8 [MM_RAM_ADDRESS_SPACE], Src: 0x080d222c [?], Size: 200
+IO MemCpy, Dest: 0xb0000190 [MM_RAM_ADDRESS_SPACE], Src: 0x080d222c [?], Size: 200
+IO MemCpy, Dest: 0xb0000258 [MM_RAM_ADDRESS_SPACE], Src: 0x080d222c [?], Size: 200
+IO MemCpy, Dest: 0xb0000320 [MM_RAM_ADDRESS_SPACE], Src: 0x080d222c [?], Size: 200
 INFO EVENT ID=5 Load Memory From File Command: Loaded 1000 bytes to address 0xB0000000 from file '/ram/test22.load'
 ERROR EVENT ID=33 OS_close error received: RC = 0xFFFFFFFF File = '/ram/test22.load'
 MM HOUSEKEEPING DATA:
@@ -1411,7 +1412,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1000
    File Name               = '/ram/test22.load'
 
@@ -1426,7 +1427,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1000
    File Name               = '/ram/test22.load'
 
@@ -1440,121 +1441,121 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1000
    File Name               = '/ram/test22.load'
 
 Test RAM Load With OS_read on call 9 error 
 -------------------------------------------
-ERROR EVENT ID=34 OS_read error received: RC = 0xFFFFFFFF File = '/ram/test22.load'
+ERROR EVENT ID=34 OS_read error received: RC = 0xFFFFFFFF Expected = 200 File = '/ram/test22.load'
 MM HOUSEKEEPING DATA:
    Command Counter         = 32
    Command Error Counter   = 75
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 0
+   Data Value              = 0x0000004D
+   Bytes Processed         = 1000
    File Name               = '/ram/test22.load'
 
 Test MEM8 Load With OS_read on call 9 error 
 -------------------------------------------
-ERROR EVENT ID=34 OS_read error received: RC = 0xFFFFFFFF File = '/ram/test22-8.load'
+ERROR EVENT ID=34 OS_read error received: RC = 0xFFFFFFFF Expected = 200 File = '/ram/test22-8.load'
 MM HOUSEKEEPING DATA:
    Command Counter         = 32
    Command Error Counter   = 76
    Last Action             = MM_LOAD_FROM_FILE
-   Memory Type             = MM_MEM8
+   Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 0
-   File Name               = '/ram/test22-8.load'
+   Data Value              = 0x0000004D
+   Bytes Processed         = 1000
+   File Name               = '/ram/test22.load'
 
 Test MEM16 Load With OS_read on call 9 error 
 -------------------------------------------
-ERROR EVENT ID=34 OS_read error received: RC = 0xFFFFFFFF File = '/ram/test22-16.load'
+ERROR EVENT ID=34 OS_read error received: RC = 0xFFFFFFFF Expected = 200 File = '/ram/test22-16.load'
 MM HOUSEKEEPING DATA:
    Command Counter         = 32
    Command Error Counter   = 77
    Last Action             = MM_LOAD_FROM_FILE
-   Memory Type             = MM_MEM16
+   Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 0
-   File Name               = '/ram/test22-16.load'
+   Data Value              = 0x0000004D
+   Bytes Processed         = 1000
+   File Name               = '/ram/test22.load'
 
 Test MEM32 Load With OS_read on call 9 error 
 -------------------------------------------
-ERROR EVENT ID=34 OS_read error received: RC = 0xFFFFFFFF File = '/ram/test22-32.load'
+ERROR EVENT ID=34 OS_read error received: RC = 0xFFFFFFFF Expected = 200 File = '/ram/test22-32.load'
 MM HOUSEKEEPING DATA:
    Command Counter         = 32
    Command Error Counter   = 78
    Last Action             = MM_LOAD_FROM_FILE
-   Memory Type             = MM_MEM32
+   Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 0
-   File Name               = '/ram/test22-32.load'
+   Data Value              = 0x0000004D
+   Bytes Processed         = 1000
+   File Name               = '/ram/test22.load'
 
 Test RAM Load With OS_read of zero bytes 
 -------------------------------------------
-ERROR EVENT ID=55 Zero bytes read by OS_read of file '/ram/test22-0.load'
+ERROR EVENT ID=34 OS_read error received: RC = 0x00000000 Expected = 200 File = '/ram/test22-0.load'
 MM HOUSEKEEPING DATA:
    Command Counter         = 32
    Command Error Counter   = 79
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 0
-   File Name               = '/ram/test22-0.load'
+   Data Value              = 0x0000004D
+   Bytes Processed         = 1000
+   File Name               = '/ram/test22.load'
 
 Test MEM32 Load With OS_read of zero bytes 
 -------------------------------------------
-ERROR EVENT ID=55 Zero bytes read by OS_read of file '/ram/test22-32-0.load'
+ERROR EVENT ID=34 OS_read error received: RC = 0x00000000 Expected = 200 File = '/ram/test22-32-0.load'
 MM HOUSEKEEPING DATA:
    Command Counter         = 32
    Command Error Counter   = 80
    Last Action             = MM_LOAD_FROM_FILE
-   Memory Type             = MM_MEM32
+   Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 0
-   File Name               = '/ram/test22-32-0.load'
+   Data Value              = 0x0000004D
+   Bytes Processed         = 1000
+   File Name               = '/ram/test22.load'
 
 Test MEM16 Load With OS_read of zero bytes 
 -------------------------------------------
-ERROR EVENT ID=55 Zero bytes read by OS_read of file '/ram/test22-16-0.load'
+ERROR EVENT ID=34 OS_read error received: RC = 0x00000000 Expected = 200 File = '/ram/test22-16-0.load'
 MM HOUSEKEEPING DATA:
    Command Counter         = 32
    Command Error Counter   = 81
    Last Action             = MM_LOAD_FROM_FILE
-   Memory Type             = MM_MEM16
+   Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 0
-   File Name               = '/ram/test22-16-0.load'
+   Data Value              = 0x0000004D
+   Bytes Processed         = 1000
+   File Name               = '/ram/test22.load'
 
 Test MEM8 Load With OS_read of zero bytes 
 -------------------------------------------
-ERROR EVENT ID=55 Zero bytes read by OS_read of file '/ram/test22-8-0.load'
+ERROR EVENT ID=34 OS_read error received: RC = 0x00000000 Expected = 200 File = '/ram/test22-8-0.load'
 MM HOUSEKEEPING DATA:
    Command Counter         = 32
    Command Error Counter   = 82
    Last Action             = MM_LOAD_FROM_FILE
-   Memory Type             = MM_MEM8
+   Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 0
-   File Name               = '/ram/test22-8-0.load'
+   Data Value              = 0x0000004D
+   Bytes Processed         = 1000
+   File Name               = '/ram/test22.load'
 
 Test Large Valid Load To RAM 
 -----------------------------
-IO MemCpy, Dest: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Src: 0x080c3d80 [?], Size: 200
-IO MemCpy, Dest: 0xb00000c8 [MM_RAM_ADDRESS_SPACE], Src: 0x080c3d80 [?], Size: 200
-IO MemCpy, Dest: 0xb0000190 [MM_RAM_ADDRESS_SPACE], Src: 0x080c3d80 [?], Size: 200
-IO MemCpy, Dest: 0xb0000258 [MM_RAM_ADDRESS_SPACE], Src: 0x080c3d80 [?], Size: 200
-IO MemCpy, Dest: 0xb0000320 [MM_RAM_ADDRESS_SPACE], Src: 0x080c3d80 [?], Size: 200
+IO MemCpy, Dest: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Src: 0x080d222c [?], Size: 200
+IO MemCpy, Dest: 0xb00000c8 [MM_RAM_ADDRESS_SPACE], Src: 0x080d222c [?], Size: 200
+IO MemCpy, Dest: 0xb0000190 [MM_RAM_ADDRESS_SPACE], Src: 0x080d222c [?], Size: 200
+IO MemCpy, Dest: 0xb0000258 [MM_RAM_ADDRESS_SPACE], Src: 0x080d222c [?], Size: 200
+IO MemCpy, Dest: 0xb0000320 [MM_RAM_ADDRESS_SPACE], Src: 0x080d222c [?], Size: 200
 INFO EVENT ID=5 Load Memory From File Command: Loaded 1000 bytes to address 0xB0000000 from file '/ram/test23.load'
 MM HOUSEKEEPING DATA:
    Command Counter         = 33
@@ -1562,17 +1563,17 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1000
    File Name               = '/ram/test23.load'
 
 Test Large Valid Load To EEPROM 
 --------------------------------
-IO MemCpy, Dest: 0xc0000000 [MM_EEPROM_ADDRESS_SPACE], Src: 0x080c3d80 [?], Size: 200
-IO MemCpy, Dest: 0xc00000c8 [MM_EEPROM_ADDRESS_SPACE], Src: 0x080c3d80 [?], Size: 200
-IO MemCpy, Dest: 0xc0000190 [MM_EEPROM_ADDRESS_SPACE], Src: 0x080c3d80 [?], Size: 200
-IO MemCpy, Dest: 0xc0000258 [MM_EEPROM_ADDRESS_SPACE], Src: 0x080c3d80 [?], Size: 200
-IO MemCpy, Dest: 0xc0000320 [MM_EEPROM_ADDRESS_SPACE], Src: 0x080c3d80 [?], Size: 200
+IO MemCpy, Dest: 0xc0000000 [MM_EEPROM_ADDRESS_SPACE], Src: 0x080d222c [?], Size: 200
+IO MemCpy, Dest: 0xc00000c8 [MM_EEPROM_ADDRESS_SPACE], Src: 0x080d222c [?], Size: 200
+IO MemCpy, Dest: 0xc0000190 [MM_EEPROM_ADDRESS_SPACE], Src: 0x080d222c [?], Size: 200
+IO MemCpy, Dest: 0xc0000258 [MM_EEPROM_ADDRESS_SPACE], Src: 0x080d222c [?], Size: 200
+IO MemCpy, Dest: 0xc0000320 [MM_EEPROM_ADDRESS_SPACE], Src: 0x080d222c [?], Size: 200
 INFO EVENT ID=5 Load Memory From File Command: Loaded 1000 bytes to address 0xC0000000 from file '/ram/test24.load'
 MM HOUSEKEEPING DATA:
    Command Counter         = 34
@@ -1580,7 +1581,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_EEPROM
    Address                 = 0xC0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1000
    File Name               = '/ram/test24.load'
 
@@ -1593,7 +1594,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_MEM32
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1000
    File Name               = '/ram/test25.load'
 
@@ -1606,7 +1607,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_MEM16
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1000
    File Name               = '/ram/test26.load'
 
@@ -1619,13 +1620,13 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1000
    File Name               = '/ram/test27.load'
 
 Test Small Valid Load To RAM 
 -----------------------------
-IO MemCpy, Dest: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Src: 0x080c3d80 [?], Size: 100
+IO MemCpy, Dest: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Src: 0x080d222c [?], Size: 100
 INFO EVENT ID=5 Load Memory From File Command: Loaded 100 bytes to address 0xB0000000 from file '/ram/test28.load'
 MM HOUSEKEEPING DATA:
    Command Counter         = 38
@@ -1633,13 +1634,13 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test28.load'
 
 Test Small Valid Load To EEPROM 
 --------------------------------
-IO MemCpy, Dest: 0xc0000000 [MM_EEPROM_ADDRESS_SPACE], Src: 0x080c3d80 [?], Size: 100
+IO MemCpy, Dest: 0xc0000000 [MM_EEPROM_ADDRESS_SPACE], Src: 0x080d222c [?], Size: 100
 INFO EVENT ID=5 Load Memory From File Command: Loaded 100 bytes to address 0xC0000000 from file '/ram/test29.load'
 MM HOUSEKEEPING DATA:
    Command Counter         = 39
@@ -1647,7 +1648,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_EEPROM
    Address                 = 0xC0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test29.load'
 
@@ -1660,7 +1661,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_MEM32
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test30.load'
 
@@ -1673,7 +1674,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_MEM16
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test31.load'
 
@@ -1686,7 +1687,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test32.load'
 
@@ -1703,7 +1704,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test32.load'
 
@@ -1716,7 +1717,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test32.load'
 
@@ -1730,7 +1731,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test32.load'
 
@@ -1743,7 +1744,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test32.load'
 
@@ -1756,7 +1757,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test32.load'
 
@@ -1769,7 +1770,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test32.load'
 
@@ -1782,7 +1783,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test32.load'
 
@@ -1795,7 +1796,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test32.load'
 
@@ -1808,7 +1809,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test32.load'
 
@@ -1821,7 +1822,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test32.load'
 
@@ -1834,7 +1835,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test32.load'
 
@@ -1847,7 +1848,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test32.load'
 
@@ -1860,7 +1861,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test32.load'
 
@@ -1873,7 +1874,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test32.load'
 
@@ -1886,7 +1887,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test32.load'
 
@@ -1899,7 +1900,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test32.load'
 
@@ -1912,7 +1913,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test32.load'
 
@@ -1925,7 +1926,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test32.load'
 
@@ -1938,19 +1939,19 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_LOAD_FROM_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test32.load'
 
 UTF Info: Return value for OSFILEAPI Api #2 set to ffffffff
 Test RAM Dump With OS_close Error 
 ----------------------------------
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb00000c8 [MM_RAM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb0000190 [MM_RAM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb0000258 [MM_RAM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb0000320 [MM_RAM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb00003e8 [MM_RAM_ADDRESS_SPACE], Size: 24
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb00000c8 [MM_RAM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb0000190 [MM_RAM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb0000258 [MM_RAM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb0000320 [MM_RAM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb00003e8 [MM_RAM_ADDRESS_SPACE], Size: 24
 INFO EVENT ID=13 Dump Memory To File Command: Dumped 1024 bytes from address 0xB0000000 to file '/ram/test18.dump'
 ERROR EVENT ID=33 OS_close error received: RC = 0xFFFFFFFF File = '/ram/test18.dump'
 MM HOUSEKEEPING DATA:
@@ -1959,7 +1960,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1024
    File Name               = '/ram/test18.dump'
 
@@ -1967,12 +1968,12 @@ UTF Info: Return code for OSFILEAPI Api #2 returned to default
 UTF Info: Return value for OSFILEAPI Api #3 set to ffffffff
 Test RAM Dump With OS_read Error 
 ---------------------------------
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb00000c8 [MM_RAM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb0000190 [MM_RAM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb0000258 [MM_RAM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb0000320 [MM_RAM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb00003e8 [MM_RAM_ADDRESS_SPACE], Size: 24
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb00000c8 [MM_RAM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb0000190 [MM_RAM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb0000258 [MM_RAM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb0000320 [MM_RAM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb00003e8 [MM_RAM_ADDRESS_SPACE], Size: 24
 ERROR EVENT ID=38 CFS_ComputeCRCFromFile error received: RC = 0xFFFFFFFF File = '/ram/test19.dump'
 INFO EVENT ID=13 Dump Memory To File Command: Dumped 1024 bytes from address 0xB0000000 to file '/ram/test19.dump'
 MM HOUSEKEEPING DATA:
@@ -1981,7 +1982,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1024
    File Name               = '/ram/test19.dump'
 
@@ -1995,7 +1996,7 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1024
    File Name               = '/ram/test19.dump'
 
@@ -2008,52 +2009,52 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1024
    File Name               = '/ram/test19.dump'
 
 Test Small RAM Dump With OS_write On Call 3 Short 
 --------------------------------------------------
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Size: 100
-ERROR EVENT ID=36 OS_write error received: RC = 0x00000060 Expected = 100 File = '/ram/test22.dump'
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Size: 100
+ERROR EVENT ID=36 OS_write error received: RC = 0x00000060, Expected = 0, File = '/ram/test22.dump'
 MM HOUSEKEEPING DATA:
    Command Counter         = 44
    Command Error Counter   = 106
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 96
-   File Name               = '/ram/test22.dump'
+   Data Value              = 0x0000004D
+   Bytes Processed         = 1024
+   File Name               = '/ram/test19.dump'
 
 Test Large RAM Dump With OS_write On Call 3 Short 
 --------------------------------------------------
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Size: 200
-ERROR EVENT ID=36 OS_write error received: RC = 0x000000C4 Expected = 200 File = '/ram/test23.dump'
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Size: 200
+ERROR EVENT ID=36 OS_write error received: RC = 0x000000C4, Expected = 0, File = '/ram/test23.dump'
 MM HOUSEKEEPING DATA:
    Command Counter         = 44
    Command Error Counter   = 107
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 196
-   File Name               = '/ram/test23.dump'
+   Data Value              = 0x0000004D
+   Bytes Processed         = 1024
+   File Name               = '/ram/test19.dump'
 
 Test Large RAM Dump With OS_write On Call 4 Short 
 --------------------------------------------------
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb00000c8 [MM_RAM_ADDRESS_SPACE], Size: 24
-ERROR EVENT ID=36 OS_write error received: RC = 0x00000014 Expected = 24 File = '/ram/test24.dump'
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb00000c8 [MM_RAM_ADDRESS_SPACE], Size: 24
+ERROR EVENT ID=36 OS_write error received: RC = 0x00000014, Expected = 0, File = '/ram/test24.dump'
 MM HOUSEKEEPING DATA:
    Command Counter         = 44
    Command Error Counter   = 108
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 220
-   File Name               = '/ram/test24.dump'
+   Data Value              = 0x0000004D
+   Bytes Processed         = 1024
+   File Name               = '/ram/test19.dump'
 
 Test Small MEM32 Dump With OS_write On Call 3 Short 
 ----------------------------------------------------
@@ -2062,11 +2063,11 @@ MM HOUSEKEEPING DATA:
    Command Counter         = 44
    Command Error Counter   = 109
    Last Action             = MM_DUMP_TO_FILE
-   Memory Type             = MM_MEM32
+   Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 96
-   File Name               = '/ram/test25.dump'
+   Data Value              = 0x0000004D
+   Bytes Processed         = 1024
+   File Name               = '/ram/test19.dump'
 
 Test Large MEM32 Dump With OS_write On Call 3 Short 
 ----------------------------------------------------
@@ -2075,11 +2076,11 @@ MM HOUSEKEEPING DATA:
    Command Counter         = 44
    Command Error Counter   = 110
    Last Action             = MM_DUMP_TO_FILE
-   Memory Type             = MM_MEM32
+   Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 196
-   File Name               = '/ram/test26.dump'
+   Data Value              = 0x0000004D
+   Bytes Processed         = 1024
+   File Name               = '/ram/test19.dump'
 
 Test Large MEM32 Dump With OS_write On Call 4 Short 
 ----------------------------------------------------
@@ -2088,11 +2089,11 @@ MM HOUSEKEEPING DATA:
    Command Counter         = 44
    Command Error Counter   = 111
    Last Action             = MM_DUMP_TO_FILE
-   Memory Type             = MM_MEM32
+   Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 220
-   File Name               = '/ram/test27.dump'
+   Data Value              = 0x0000004D
+   Bytes Processed         = 1024
+   File Name               = '/ram/test19.dump'
 
 Test Small MEM16 Dump With OS_write On Call 3 Short 
 ----------------------------------------------------
@@ -2101,11 +2102,11 @@ MM HOUSEKEEPING DATA:
    Command Counter         = 44
    Command Error Counter   = 112
    Last Action             = MM_DUMP_TO_FILE
-   Memory Type             = MM_MEM16
+   Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 96
-   File Name               = '/ram/test28.dump'
+   Data Value              = 0x0000004D
+   Bytes Processed         = 1024
+   File Name               = '/ram/test19.dump'
 
 Test Large MEM16 Dump With OS_write On Call 3 Short 
 ----------------------------------------------------
@@ -2114,11 +2115,11 @@ MM HOUSEKEEPING DATA:
    Command Counter         = 44
    Command Error Counter   = 113
    Last Action             = MM_DUMP_TO_FILE
-   Memory Type             = MM_MEM16
+   Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 196
-   File Name               = '/ram/test29.dump'
+   Data Value              = 0x0000004D
+   Bytes Processed         = 1024
+   File Name               = '/ram/test19.dump'
 
 Test Large MEM16 Dump With OS_write On Call 4 Short 
 ----------------------------------------------------
@@ -2127,11 +2128,11 @@ MM HOUSEKEEPING DATA:
    Command Counter         = 44
    Command Error Counter   = 114
    Last Action             = MM_DUMP_TO_FILE
-   Memory Type             = MM_MEM16
+   Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 220
-   File Name               = '/ram/test30.dump'
+   Data Value              = 0x0000004D
+   Bytes Processed         = 1024
+   File Name               = '/ram/test19.dump'
 
 Test Small MEM8 Dump With OS_write On Call 3 Short 
 ---------------------------------------------------
@@ -2140,11 +2141,11 @@ MM HOUSEKEEPING DATA:
    Command Counter         = 44
    Command Error Counter   = 115
    Last Action             = MM_DUMP_TO_FILE
-   Memory Type             = MM_MEM8
+   Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 96
-   File Name               = '/ram/test31.dump'
+   Data Value              = 0x0000004D
+   Bytes Processed         = 1024
+   File Name               = '/ram/test19.dump'
 
 Test Large MEM8 Dump With OS_write On Call 3 Short 
 ---------------------------------------------------
@@ -2153,11 +2154,11 @@ MM HOUSEKEEPING DATA:
    Command Counter         = 44
    Command Error Counter   = 116
    Last Action             = MM_DUMP_TO_FILE
-   Memory Type             = MM_MEM8
+   Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 196
-   File Name               = '/ram/test32.dump'
+   Data Value              = 0x0000004D
+   Bytes Processed         = 1024
+   File Name               = '/ram/test19.dump'
 
 Test Large MEM8 Dump With OS_write On Call 4 Short 
 ---------------------------------------------------
@@ -2166,20 +2167,20 @@ MM HOUSEKEEPING DATA:
    Command Counter         = 44
    Command Error Counter   = 117
    Last Action             = MM_DUMP_TO_FILE
-   Memory Type             = MM_MEM8
+   Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 220
-   File Name               = '/ram/test33.dump'
+   Data Value              = 0x0000004D
+   Bytes Processed         = 1024
+   File Name               = '/ram/test19.dump'
 
 Test Large Valid Dump From RAM 
 -------------------------------
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb00000c8 [MM_RAM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb0000190 [MM_RAM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb0000258 [MM_RAM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb0000320 [MM_RAM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb00003e8 [MM_RAM_ADDRESS_SPACE], Size: 24
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb00000c8 [MM_RAM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb0000190 [MM_RAM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb0000258 [MM_RAM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb0000320 [MM_RAM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb00003e8 [MM_RAM_ADDRESS_SPACE], Size: 24
 INFO EVENT ID=13 Dump Memory To File Command: Dumped 1024 bytes from address 0xB0000000 to file '/ram/test34.dump'
 MM HOUSEKEEPING DATA:
    Command Counter         = 45
@@ -2187,13 +2188,13 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1024
    File Name               = '/ram/test34.dump'
 
 Test Small Valid Dump From RAM 
 -------------------------------
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Size: 100
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Size: 100
 INFO EVENT ID=13 Dump Memory To File Command: Dumped 100 bytes from address 0xB0000000 to file '/ram/test35.dump'
 MM HOUSEKEEPING DATA:
    Command Counter         = 46
@@ -2201,18 +2202,18 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test35.dump'
 
 Test Large Valid Dump From EEPROM 
 ----------------------------------
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xc0000000 [MM_EEPROM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xc00000c8 [MM_EEPROM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xc0000190 [MM_EEPROM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xc0000258 [MM_EEPROM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xc0000320 [MM_EEPROM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xc00003e8 [MM_EEPROM_ADDRESS_SPACE], Size: 24
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xc0000000 [MM_EEPROM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xc00000c8 [MM_EEPROM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xc0000190 [MM_EEPROM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xc0000258 [MM_EEPROM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xc0000320 [MM_EEPROM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xc00003e8 [MM_EEPROM_ADDRESS_SPACE], Size: 24
 INFO EVENT ID=13 Dump Memory To File Command: Dumped 1024 bytes from address 0xC0000000 to file '/ram/test36.dump'
 MM HOUSEKEEPING DATA:
    Command Counter         = 47
@@ -2220,13 +2221,13 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_EEPROM
    Address                 = 0xC0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1024
    File Name               = '/ram/test36.dump'
 
 Test Small Valid Dump From EEPROM 
 ----------------------------------
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xc0000000 [MM_EEPROM_ADDRESS_SPACE], Size: 100
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xc0000000 [MM_EEPROM_ADDRESS_SPACE], Size: 100
 INFO EVENT ID=13 Dump Memory To File Command: Dumped 100 bytes from address 0xC0000000 to file '/ram/test37.dump'
 MM HOUSEKEEPING DATA:
    Command Counter         = 48
@@ -2234,59 +2235,61 @@ MM HOUSEKEEPING DATA:
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_EEPROM
    Address                 = 0xC0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test37.dump'
 
 Test Large Valid Dump From MEM32 
 ---------------------------------
-INFO EVENT ID=13 Dump Memory To File Command: Dumped 1024 bytes from address 0xB0000000 to file '/ram/test38.dump'
+Sim Mem Memory Address Not Found 0xb0000400
+ERROR EVENT ID=56 PSP read memory error: RC=0xFFFFFFFF, Src=0xB0000400, Tgt=0x080D23D4, Type=MEM32
 MM HOUSEKEEPING DATA:
-   Command Counter         = 49
-   Command Error Counter   = 117
+   Command Counter         = 48
+   Command Error Counter   = 118
    Last Action             = MM_DUMP_TO_FILE
-   Memory Type             = MM_MEM32
-   Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 1024
-   File Name               = '/ram/test38.dump'
+   Memory Type             = MM_EEPROM
+   Address                 = 0xC0000000
+   Data Value              = 0x0000004D
+   Bytes Processed         = 100
+   File Name               = '/ram/test37.dump'
 
 Test Small Valid Dump From MEM32 
 ---------------------------------
 INFO EVENT ID=13 Dump Memory To File Command: Dumped 100 bytes from address 0xB0000000 to file '/ram/test39.dump'
 MM HOUSEKEEPING DATA:
-   Command Counter         = 50
-   Command Error Counter   = 117
+   Command Counter         = 49
+   Command Error Counter   = 118
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_MEM32
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test39.dump'
 
 Test Large Valid Dump From MEM16 
 ---------------------------------
-INFO EVENT ID=13 Dump Memory To File Command: Dumped 1024 bytes from address 0xB0000000 to file '/ram/test40.dump'
+Sim Mem Memory Address Not Found 0xb0000400
+ERROR EVENT ID=56 PSP read memory error: RC=0xFFFFFFFF, Src=0xB0000400, Tgt=0x080D23D4, Type=MEM16
 MM HOUSEKEEPING DATA:
-   Command Counter         = 51
-   Command Error Counter   = 117
+   Command Counter         = 49
+   Command Error Counter   = 119
    Last Action             = MM_DUMP_TO_FILE
-   Memory Type             = MM_MEM16
+   Memory Type             = MM_MEM32
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 1024
-   File Name               = '/ram/test40.dump'
+   Data Value              = 0x0000004D
+   Bytes Processed         = 100
+   File Name               = '/ram/test39.dump'
 
 Test Small Valid Dump From MEM16 
 ---------------------------------
 INFO EVENT ID=13 Dump Memory To File Command: Dumped 100 bytes from address 0xB0000000 to file '/ram/test41.dump'
 MM HOUSEKEEPING DATA:
-   Command Counter         = 52
-   Command Error Counter   = 117
+   Command Counter         = 50
+   Command Error Counter   = 119
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_MEM16
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test41.dump'
 
@@ -2294,12 +2297,12 @@ Test Large Valid Dump From MEM8
 --------------------------------
 INFO EVENT ID=13 Dump Memory To File Command: Dumped 1024 bytes from address 0xB0000000 to file '/ram/test42.dump'
 MM HOUSEKEEPING DATA:
-   Command Counter         = 53
-   Command Error Counter   = 117
+   Command Counter         = 51
+   Command Error Counter   = 119
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 1024
    File Name               = '/ram/test42.dump'
 
@@ -2307,12 +2310,12 @@ Test Small Valid Dump From MEM8
 --------------------------------
 INFO EVENT ID=13 Dump Memory To File Command: Dumped 100 bytes from address 0xB0000000 to file '/ram/test43.dump'
 MM HOUSEKEEPING DATA:
-   Command Counter         = 54
-   Command Error Counter   = 117
+   Command Counter         = 52
+   Command Error Counter   = 119
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test43.dump'
 
@@ -2325,12 +2328,12 @@ Test Fill With Bad Symbol Name
 OSAL: Error, cannot locate symbol 'BadSymName'
 ERROR EVENT ID=20 Symbolic address can't be resolved: Name = 'BadSymName'
 MM HOUSEKEEPING DATA:
-   Command Counter         = 54
-   Command Error Counter   = 118
+   Command Counter         = 52
+   Command Error Counter   = 120
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test43.dump'
 
@@ -2338,12 +2341,12 @@ Test Fill That Exceeds RAM Configuration Limits
 -------------------------------------------------
 ERROR EVENT ID=21 Data size in bytes invalid or exceeds limits: Data Size = 1048776
 MM HOUSEKEEPING DATA:
-   Command Counter         = 54
-   Command Error Counter   = 119
+   Command Counter         = 52
+   Command Error Counter   = 121
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test43.dump'
 
@@ -2351,12 +2354,12 @@ Test Fill That Exceeds EEPROM Configuration Limits
 -------------------------------------------------
 ERROR EVENT ID=21 Data size in bytes invalid or exceeds limits: Data Size = 131272
 MM HOUSEKEEPING DATA:
-   Command Counter         = 54
-   Command Error Counter   = 120
+   Command Counter         = 52
+   Command Error Counter   = 122
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test43.dump'
 
@@ -2364,12 +2367,12 @@ Test Fill That Exceeds MEM32 Configuration Limits
 --------------------------------------------------
 ERROR EVENT ID=21 Data size in bytes invalid or exceeds limits: Data Size = 1048776
 MM HOUSEKEEPING DATA:
-   Command Counter         = 54
-   Command Error Counter   = 121
+   Command Counter         = 52
+   Command Error Counter   = 123
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test43.dump'
 
@@ -2377,12 +2380,12 @@ Test Fill That Exceeds MEM16 Configuration Limits
 --------------------------------------------------
 ERROR EVENT ID=21 Data size in bytes invalid or exceeds limits: Data Size = 1048776
 MM HOUSEKEEPING DATA:
-   Command Counter         = 54
-   Command Error Counter   = 122
+   Command Counter         = 52
+   Command Error Counter   = 124
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test43.dump'
 
@@ -2390,12 +2393,12 @@ Test Fill That Exceeds MEM8 Configuration Limits
 --------------------------------------------------
 ERROR EVENT ID=21 Data size in bytes invalid or exceeds limits: Data Size = 1048776
 MM HOUSEKEEPING DATA:
-   Command Counter         = 54
-   Command Error Counter   = 123
+   Command Counter         = 52
+   Command Error Counter   = 125
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test43.dump'
 
@@ -2403,12 +2406,12 @@ Test MEM32 Fill With Misaligned Address
 ----------------------------------------
 ERROR EVENT ID=23 Data and address not 32 bit aligned: Addr = 0xB0000003 Size = 1024
 MM HOUSEKEEPING DATA:
-   Command Counter         = 54
-   Command Error Counter   = 124
+   Command Counter         = 52
+   Command Error Counter   = 126
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test43.dump'
 
@@ -2416,12 +2419,12 @@ Test MEM32 Fill With Misaligned Data Size
 ------------------------------------------
 ERROR EVENT ID=23 Data and address not 32 bit aligned: Addr = 0xB0000000 Size = 1021
 MM HOUSEKEEPING DATA:
-   Command Counter         = 54
-   Command Error Counter   = 125
+   Command Counter         = 52
+   Command Error Counter   = 127
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test43.dump'
 
@@ -2429,12 +2432,12 @@ Test MEM16 Fill With Misaligned Address
 ----------------------------------------
 ERROR EVENT ID=24 Data and address not 16 bit aligned: Addr = 0xB0000003 Size = 1024
 MM HOUSEKEEPING DATA:
-   Command Counter         = 54
-   Command Error Counter   = 126
+   Command Counter         = 52
+   Command Error Counter   = 128
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test43.dump'
 
@@ -2442,12 +2445,12 @@ Test MEM16 Fill With Misaligned Data Size
 ------------------------------------------
 ERROR EVENT ID=24 Data and address not 16 bit aligned: Addr = 0xB0000000 Size = 1021
 MM HOUSEKEEPING DATA:
-   Command Counter         = 54
-   Command Error Counter   = 127
+   Command Counter         = 52
+   Command Error Counter   = 129
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test43.dump'
 
@@ -2455,12 +2458,12 @@ Test Fill With Invalid Memory Type
 -----------------------------------
 ERROR EVENT ID=19 Invalid memory type specified: MemType = 255
 MM HOUSEKEEPING DATA:
-   Command Counter         = 54
-   Command Error Counter   = 128
+   Command Counter         = 52
+   Command Error Counter   = 130
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test43.dump'
 
@@ -2468,12 +2471,12 @@ Test RAM Fill With Bad Address
 -------------------------------
 ERROR EVENT ID=25 CFE_PSP_MemValidateRange error received: RC = 0xFFFFFFEB Addr = 0xD0000000 Size = 1024 MemType = 1
 MM HOUSEKEEPING DATA:
-   Command Counter         = 54
-   Command Error Counter   = 129
+   Command Counter         = 52
+   Command Error Counter   = 131
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test43.dump'
 
@@ -2481,12 +2484,12 @@ Test EEPROM Fill With Bad Address
 ----------------------------------
 ERROR EVENT ID=25 CFE_PSP_MemValidateRange error received: RC = 0xFFFFFFEB Addr = 0xD0000000 Size = 1024 MemType = 2
 MM HOUSEKEEPING DATA:
-   Command Counter         = 54
-   Command Error Counter   = 130
+   Command Counter         = 52
+   Command Error Counter   = 132
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test43.dump'
 
@@ -2494,12 +2497,12 @@ Test MEM32 Fill With Bad Address
 ---------------------------------
 ERROR EVENT ID=25 CFE_PSP_MemValidateRange error received: RC = 0xFFFFFFEB Addr = 0xD0000000 Size = 1024 MemType = 1
 MM HOUSEKEEPING DATA:
-   Command Counter         = 54
-   Command Error Counter   = 131
+   Command Counter         = 52
+   Command Error Counter   = 133
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test43.dump'
 
@@ -2507,12 +2510,12 @@ Test MEM16 Fill With Bad Address
 ---------------------------------
 ERROR EVENT ID=25 CFE_PSP_MemValidateRange error received: RC = 0xFFFFFFEB Addr = 0xD0000000 Size = 1024 MemType = 1
 MM HOUSEKEEPING DATA:
-   Command Counter         = 54
-   Command Error Counter   = 132
+   Command Counter         = 52
+   Command Error Counter   = 134
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test43.dump'
 
@@ -2520,144 +2523,144 @@ Test MEM8 Fill With Bad Address
 --------------------------------
 ERROR EVENT ID=25 CFE_PSP_MemValidateRange error received: RC = 0xFFFFFFEB Addr = 0xD0000000 Size = 1024 MemType = 1
 MM HOUSEKEEPING DATA:
-   Command Counter         = 54
-   Command Error Counter   = 133
+   Command Counter         = 52
+   Command Error Counter   = 135
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000004D
    Bytes Processed         = 100
    File Name               = '/ram/test43.dump'
 
 Test Large Valid Fill To RAM 
 -----------------------------
-IO MemCpy, Dest: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Src: 0x080c3e60 [?], Size: 200
-IO MemCpy, Dest: 0xb00000c8 [MM_RAM_ADDRESS_SPACE], Src: 0x080c3e60 [?], Size: 200
-IO MemCpy, Dest: 0xb0000190 [MM_RAM_ADDRESS_SPACE], Src: 0x080c3e60 [?], Size: 200
-IO MemCpy, Dest: 0xb0000258 [MM_RAM_ADDRESS_SPACE], Src: 0x080c3e60 [?], Size: 200
-IO MemCpy, Dest: 0xb0000320 [MM_RAM_ADDRESS_SPACE], Src: 0x080c3e60 [?], Size: 200
-IO MemCpy, Dest: 0xb00003e8 [MM_RAM_ADDRESS_SPACE], Src: 0x080c3e60 [?], Size: 24
+IO MemCpy, Dest: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Src: 0x080d23bc [?], Size: 200
+IO MemCpy, Dest: 0xb00000c8 [MM_RAM_ADDRESS_SPACE], Src: 0x080d23bc [?], Size: 200
+IO MemCpy, Dest: 0xb0000190 [MM_RAM_ADDRESS_SPACE], Src: 0x080d23bc [?], Size: 200
+IO MemCpy, Dest: 0xb0000258 [MM_RAM_ADDRESS_SPACE], Src: 0x080d23bc [?], Size: 200
+IO MemCpy, Dest: 0xb0000320 [MM_RAM_ADDRESS_SPACE], Src: 0x080d23bc [?], Size: 200
+IO MemCpy, Dest: 0xb00003e8 [MM_RAM_ADDRESS_SPACE], Src: 0x080d23bc [?], Size: 24
 INFO EVENT ID=6 Fill Memory Command: Filled 1024 bytes at address: 0xB0000000 with pattern: 0x12345678
 MM HOUSEKEEPING DATA:
-   Command Counter         = 55
-   Command Error Counter   = 133
+   Command Counter         = 53
+   Command Error Counter   = 135
    Last Action             = MM_FILL
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x12345678
+   Data Value              = 0x12345678
    Bytes Processed         = 1024
-   File Name               = ''
+   File Name               = '/ram/test43.dump'
 
 Dumping Fill Area 
 ------------------
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb00000c8 [MM_RAM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb0000190 [MM_RAM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb0000258 [MM_RAM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb0000320 [MM_RAM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb00003e8 [MM_RAM_ADDRESS_SPACE], Size: 24
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb00000c8 [MM_RAM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb0000190 [MM_RAM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb0000258 [MM_RAM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb0000320 [MM_RAM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb00003e8 [MM_RAM_ADDRESS_SPACE], Size: 24
 INFO EVENT ID=13 Dump Memory To File Command: Dumped 1024 bytes from address 0xB0000000 to file '/ram/fill1.dump'
 MM HOUSEKEEPING DATA:
-   Command Counter         = 56
-   Command Error Counter   = 133
+   Command Counter         = 54
+   Command Error Counter   = 135
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x12345678
    Bytes Processed         = 1024
    File Name               = '/ram/fill1.dump'
 
 Test Small Valid Fill To RAM 
 -----------------------------
-IO MemCpy, Dest: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Src: 0x080c3e60 [?], Size: 100
+IO MemCpy, Dest: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Src: 0x080d23bc [?], Size: 100
 INFO EVENT ID=6 Fill Memory Command: Filled 100 bytes at address: 0xB0000000 with pattern: 0xAABCDEFF
 MM HOUSEKEEPING DATA:
-   Command Counter         = 57
-   Command Error Counter   = 133
+   Command Counter         = 55
+   Command Error Counter   = 135
    Last Action             = MM_FILL
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0xAABCDEFF
+   Data Value              = 0xAABCDEFF
    Bytes Processed         = 100
-   File Name               = ''
+   File Name               = '/ram/fill1.dump'
 
 Dumping Fill Area 
 ------------------
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Size: 112
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xb0000000 [MM_RAM_ADDRESS_SPACE], Size: 112
 INFO EVENT ID=13 Dump Memory To File Command: Dumped 112 bytes from address 0xB0000000 to file '/ram/fill2.dump'
 MM HOUSEKEEPING DATA:
-   Command Counter         = 58
-   Command Error Counter   = 133
+   Command Counter         = 56
+   Command Error Counter   = 135
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_RAM
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0xAABCDEFF
    Bytes Processed         = 112
    File Name               = '/ram/fill2.dump'
 
 Test Large Valid Fill To EEPROM 
 --------------------------------
-IO MemCpy, Dest: 0xc0000000 [MM_EEPROM_ADDRESS_SPACE], Src: 0x080c3e60 [?], Size: 200
-IO MemCpy, Dest: 0xc00000c8 [MM_EEPROM_ADDRESS_SPACE], Src: 0x080c3e60 [?], Size: 200
-IO MemCpy, Dest: 0xc0000190 [MM_EEPROM_ADDRESS_SPACE], Src: 0x080c3e60 [?], Size: 200
-IO MemCpy, Dest: 0xc0000258 [MM_EEPROM_ADDRESS_SPACE], Src: 0x080c3e60 [?], Size: 200
-IO MemCpy, Dest: 0xc0000320 [MM_EEPROM_ADDRESS_SPACE], Src: 0x080c3e60 [?], Size: 200
-IO MemCpy, Dest: 0xc00003e8 [MM_EEPROM_ADDRESS_SPACE], Src: 0x080c3e60 [?], Size: 24
+IO MemCpy, Dest: 0xc0000000 [MM_EEPROM_ADDRESS_SPACE], Src: 0x080d23bc [?], Size: 200
+IO MemCpy, Dest: 0xc00000c8 [MM_EEPROM_ADDRESS_SPACE], Src: 0x080d23bc [?], Size: 200
+IO MemCpy, Dest: 0xc0000190 [MM_EEPROM_ADDRESS_SPACE], Src: 0x080d23bc [?], Size: 200
+IO MemCpy, Dest: 0xc0000258 [MM_EEPROM_ADDRESS_SPACE], Src: 0x080d23bc [?], Size: 200
+IO MemCpy, Dest: 0xc0000320 [MM_EEPROM_ADDRESS_SPACE], Src: 0x080d23bc [?], Size: 200
+IO MemCpy, Dest: 0xc00003e8 [MM_EEPROM_ADDRESS_SPACE], Src: 0x080d23bc [?], Size: 24
 INFO EVENT ID=6 Fill Memory Command: Filled 1024 bytes at address: 0xC0000000 with pattern: 0x98765432
 MM HOUSEKEEPING DATA:
-   Command Counter         = 59
-   Command Error Counter   = 133
+   Command Counter         = 57
+   Command Error Counter   = 135
    Last Action             = MM_FILL
    Memory Type             = MM_EEPROM
    Address                 = 0xC0000000
-   Fill Pattern            = 0x98765432
+   Data Value              = 0x98765432
    Bytes Processed         = 1024
-   File Name               = ''
+   File Name               = '/ram/fill2.dump'
 
 Dumping Fill Area 
 ------------------
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xc0000000 [MM_EEPROM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xc00000c8 [MM_EEPROM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xc0000190 [MM_EEPROM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xc0000258 [MM_EEPROM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xc0000320 [MM_EEPROM_ADDRESS_SPACE], Size: 200
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xc00003e8 [MM_EEPROM_ADDRESS_SPACE], Size: 24
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xc0000000 [MM_EEPROM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xc00000c8 [MM_EEPROM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xc0000190 [MM_EEPROM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xc0000258 [MM_EEPROM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xc0000320 [MM_EEPROM_ADDRESS_SPACE], Size: 200
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xc00003e8 [MM_EEPROM_ADDRESS_SPACE], Size: 24
 INFO EVENT ID=13 Dump Memory To File Command: Dumped 1024 bytes from address 0xC0000000 to file '/ram/fill3.dump'
 MM HOUSEKEEPING DATA:
-   Command Counter         = 60
-   Command Error Counter   = 133
+   Command Counter         = 58
+   Command Error Counter   = 135
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_EEPROM
    Address                 = 0xC0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x98765432
    Bytes Processed         = 1024
    File Name               = '/ram/fill3.dump'
 
 Test Small Valid Fill To EEPROM 
 --------------------------------
-IO MemCpy, Dest: 0xc0000000 [MM_EEPROM_ADDRESS_SPACE], Src: 0x080c3e60 [?], Size: 100
+IO MemCpy, Dest: 0xc0000000 [MM_EEPROM_ADDRESS_SPACE], Src: 0x080d23bc [?], Size: 100
 INFO EVENT ID=6 Fill Memory Command: Filled 100 bytes at address: 0xC0000000 with pattern: 0xFFEDCBAA
 MM HOUSEKEEPING DATA:
-   Command Counter         = 61
-   Command Error Counter   = 133
+   Command Counter         = 59
+   Command Error Counter   = 135
    Last Action             = MM_FILL
    Memory Type             = MM_EEPROM
    Address                 = 0xC0000000
-   Fill Pattern            = 0xFFEDCBAA
+   Data Value              = 0xFFEDCBAA
    Bytes Processed         = 100
-   File Name               = ''
+   File Name               = '/ram/fill3.dump'
 
 Dumping Fill Area 
 ------------------
-IO MemCpy, Dest: 0x080c4740 [?], Src: 0xc0000000 [MM_EEPROM_ADDRESS_SPACE], Size: 112
+IO MemCpy, Dest: 0x080d22f4 [?], Src: 0xc0000000 [MM_EEPROM_ADDRESS_SPACE], Size: 112
 INFO EVENT ID=13 Dump Memory To File Command: Dumped 112 bytes from address 0xC0000000 to file '/ram/fill4.dump'
 MM HOUSEKEEPING DATA:
-   Command Counter         = 62
-   Command Error Counter   = 133
+   Command Counter         = 60
+   Command Error Counter   = 135
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_EEPROM
    Address                 = 0xC0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0xFFEDCBAA
    Bytes Processed         = 112
    File Name               = '/ram/fill4.dump'
 
@@ -2665,51 +2668,52 @@ Test Large Valid Fill To MEM32
 -------------------------------
 INFO EVENT ID=6 Fill Memory Command: Filled 1024 bytes at address: 0xB0000000 with pattern: 0x12345678
 MM HOUSEKEEPING DATA:
-   Command Counter         = 63
-   Command Error Counter   = 133
+   Command Counter         = 61
+   Command Error Counter   = 135
    Last Action             = MM_FILL
    Memory Type             = MM_MEM32
    Address                 = 0xB0000000
-   Fill Pattern            = 0x12345678
+   Data Value              = 0x12345678
    Bytes Processed         = 1024
-   File Name               = ''
+   File Name               = '/ram/fill4.dump'
 
 Dumping Fill Area 
 ------------------
-INFO EVENT ID=13 Dump Memory To File Command: Dumped 1024 bytes from address 0xB0000000 to file '/ram/fill5.dump'
+Sim Mem Memory Address Not Found 0xb0000400
+ERROR EVENT ID=56 PSP read memory error: RC=0xFFFFFFFF, Src=0xB0000400, Tgt=0x080D23D4, Type=MEM32
 MM HOUSEKEEPING DATA:
-   Command Counter         = 64
-   Command Error Counter   = 133
-   Last Action             = MM_DUMP_TO_FILE
+   Command Counter         = 61
+   Command Error Counter   = 136
+   Last Action             = MM_FILL
    Memory Type             = MM_MEM32
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x12345678
    Bytes Processed         = 1024
-   File Name               = '/ram/fill5.dump'
+   File Name               = '/ram/fill4.dump'
 
 Test Small Valid Fill To MEM32 
 -------------------------------
 INFO EVENT ID=6 Fill Memory Command: Filled 100 bytes at address: 0xB0000000 with pattern: 0xAABCDEFF
 MM HOUSEKEEPING DATA:
-   Command Counter         = 65
-   Command Error Counter   = 133
+   Command Counter         = 62
+   Command Error Counter   = 136
    Last Action             = MM_FILL
    Memory Type             = MM_MEM32
    Address                 = 0xB0000000
-   Fill Pattern            = 0xAABCDEFF
+   Data Value              = 0xAABCDEFF
    Bytes Processed         = 100
-   File Name               = ''
+   File Name               = '/ram/fill4.dump'
 
 Dumping Fill Area 
 ------------------
 INFO EVENT ID=13 Dump Memory To File Command: Dumped 112 bytes from address 0xB0000000 to file '/ram/fill6.dump'
 MM HOUSEKEEPING DATA:
-   Command Counter         = 66
-   Command Error Counter   = 133
+   Command Counter         = 63
+   Command Error Counter   = 136
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_MEM32
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0xAABCDEFF
    Bytes Processed         = 112
    File Name               = '/ram/fill6.dump'
 
@@ -2717,51 +2721,52 @@ Test Large Valid Fill To MEM16
 -------------------------------
 INFO EVENT ID=6 Fill Memory Command: Filled 1024 bytes at address: 0xB0000000 with pattern: 0x00005432
 MM HOUSEKEEPING DATA:
-   Command Counter         = 67
-   Command Error Counter   = 133
+   Command Counter         = 64
+   Command Error Counter   = 136
    Last Action             = MM_FILL
    Memory Type             = MM_MEM16
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00005432
+   Data Value              = 0x00005432
    Bytes Processed         = 1024
-   File Name               = ''
+   File Name               = '/ram/fill6.dump'
 
 Dumping Fill Area 
 ------------------
-INFO EVENT ID=13 Dump Memory To File Command: Dumped 1024 bytes from address 0xB0000000 to file '/ram/fill7.dump'
+Sim Mem Memory Address Not Found 0xb0000400
+ERROR EVENT ID=56 PSP read memory error: RC=0xFFFFFFFF, Src=0xB0000400, Tgt=0x080D23D4, Type=MEM16
 MM HOUSEKEEPING DATA:
-   Command Counter         = 68
-   Command Error Counter   = 133
-   Last Action             = MM_DUMP_TO_FILE
+   Command Counter         = 64
+   Command Error Counter   = 137
+   Last Action             = MM_FILL
    Memory Type             = MM_MEM16
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00005432
    Bytes Processed         = 1024
-   File Name               = '/ram/fill7.dump'
+   File Name               = '/ram/fill6.dump'
 
 Test Small Valid Fill To MEM16 
 -------------------------------
 INFO EVENT ID=6 Fill Memory Command: Filled 100 bytes at address: 0xB0000000 with pattern: 0x0000CBAA
 MM HOUSEKEEPING DATA:
-   Command Counter         = 69
-   Command Error Counter   = 133
+   Command Counter         = 65
+   Command Error Counter   = 137
    Last Action             = MM_FILL
    Memory Type             = MM_MEM16
    Address                 = 0xB0000000
-   Fill Pattern            = 0x0000CBAA
+   Data Value              = 0x0000CBAA
    Bytes Processed         = 100
-   File Name               = ''
+   File Name               = '/ram/fill6.dump'
 
 Dumping Fill Area 
 ------------------
 INFO EVENT ID=13 Dump Memory To File Command: Dumped 112 bytes from address 0xB0000000 to file '/ram/fill8.dump'
 MM HOUSEKEEPING DATA:
-   Command Counter         = 70
-   Command Error Counter   = 133
+   Command Counter         = 66
+   Command Error Counter   = 137
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_MEM16
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x0000CBAA
    Bytes Processed         = 112
    File Name               = '/ram/fill8.dump'
 
@@ -2769,25 +2774,25 @@ Test Large Valid Fill To MEM8
 ------------------------------
 INFO EVENT ID=6 Fill Memory Command: Filled 1024 bytes at address: 0xB0000000 with pattern: 0x00000078
 MM HOUSEKEEPING DATA:
-   Command Counter         = 71
-   Command Error Counter   = 133
+   Command Counter         = 67
+   Command Error Counter   = 137
    Last Action             = MM_FILL
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000078
+   Data Value              = 0x00000078
    Bytes Processed         = 1024
-   File Name               = ''
+   File Name               = '/ram/fill8.dump'
 
 Dumping Fill Area 
 ------------------
 INFO EVENT ID=13 Dump Memory To File Command: Dumped 1024 bytes from address 0xB0000000 to file '/ram/fill9.dump'
 MM HOUSEKEEPING DATA:
-   Command Counter         = 72
-   Command Error Counter   = 133
+   Command Counter         = 68
+   Command Error Counter   = 137
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000078
    Bytes Processed         = 1024
    File Name               = '/ram/fill9.dump'
 
@@ -2795,25 +2800,25 @@ Test Small Valid Fill To MEM8
 ------------------------------
 INFO EVENT ID=6 Fill Memory Command: Filled 100 bytes at address: 0xB0000000 with pattern: 0x000000FF
 MM HOUSEKEEPING DATA:
-   Command Counter         = 73
-   Command Error Counter   = 133
+   Command Counter         = 69
+   Command Error Counter   = 137
    Last Action             = MM_FILL
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x000000FF
+   Data Value              = 0x000000FF
    Bytes Processed         = 100
-   File Name               = ''
+   File Name               = '/ram/fill9.dump'
 
 Dumping Fill Area 
 ------------------
 INFO EVENT ID=13 Dump Memory To File Command: Dumped 112 bytes from address 0xB0000000 to file '/ram/fill10.dump'
 MM HOUSEKEEPING DATA:
-   Command Counter         = 74
-   Command Error Counter   = 133
+   Command Counter         = 70
+   Command Error Counter   = 137
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x000000FF
    Bytes Processed         = 112
    File Name               = '/ram/fill10.dump'
 
@@ -2826,12 +2831,12 @@ Test Lookup With Bad Symbol Name
 OSAL: Error, cannot locate symbol 'BadSymName'
 ERROR EVENT ID=20 Symbolic address can't be resolved: Name = 'BadSymName'
 MM HOUSEKEEPING DATA:
-   Command Counter         = 74
-   Command Error Counter   = 134
+   Command Counter         = 70
+   Command Error Counter   = 138
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x000000FF
    Bytes Processed         = 112
    File Name               = '/ram/fill10.dump'
 
@@ -2839,12 +2844,12 @@ Test Lookup With empty Symbol Name
 -----------------------------------
 ERROR EVENT ID=46 NUL (empty) string specified as symbol name
 MM HOUSEKEEPING DATA:
-   Command Counter         = 74
-   Command Error Counter   = 135
+   Command Counter         = 70
+   Command Error Counter   = 139
    Last Action             = MM_DUMP_TO_FILE
    Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x000000FF
    Bytes Processed         = 112
    File Name               = '/ram/fill10.dump'
 
@@ -2853,14 +2858,14 @@ Test Lookup With Good Symbol Name
 OSAL: Address passed back = b0000000
 INFO EVENT ID=45 Symbol Lookup Command: Name = 'GoodSymName' Addr = 0xB0000000
 MM HOUSEKEEPING DATA:
-   Command Counter         = 75
-   Command Error Counter   = 135
+   Command Counter         = 71
+   Command Error Counter   = 139
    Last Action             = MM_SYM_LOOKUP
-   Memory Type             = MM_NOMEMTYPE
+   Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 0
-   File Name               = ''
+   Data Value              = 0x000000FF
+   Bytes Processed         = 112
+   File Name               = '/ram/fill10.dump'
 
 ***************************
 * Symbol Table Dump Tests *
@@ -2870,53 +2875,53 @@ Test symbol dump with empty file name
 --------------------------------------
 ERROR EVENT ID=48 NUL (empty) string specified as symbol dump file name
 MM HOUSEKEEPING DATA:
-   Command Counter         = 75
-   Command Error Counter   = 136
+   Command Counter         = 71
+   Command Error Counter   = 140
    Last Action             = MM_SYM_LOOKUP
-   Memory Type             = MM_NOMEMTYPE
+   Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 0
-   File Name               = ''
+   Data Value              = 0x000000FF
+   Bytes Processed         = 112
+   File Name               = '/ram/fill10.dump'
 
 Test symbol dump with invalid file name 
 --------------------------------------
 ERROR EVENT ID=50 Illegal characters in target filename, File='BadFile*Name'
 MM HOUSEKEEPING DATA:
-   Command Counter         = 75
-   Command Error Counter   = 137
+   Command Counter         = 71
+   Command Error Counter   = 141
    Last Action             = MM_SYM_LOOKUP
-   Memory Type             = MM_NOMEMTYPE
+   Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 0
-   File Name               = ''
+   Data Value              = 0x000000FF
+   Bytes Processed         = 112
+   File Name               = '/ram/fill10.dump'
 
 Test symbol dump with good filename but bad OS return 
 ------------------------------------------------------
 ERROR EVENT ID=49 Error dumping symbol table, OS_Status= 0xFFFFFFFF, File='IrrelevantFileName'
 MM HOUSEKEEPING DATA:
-   Command Counter         = 75
-   Command Error Counter   = 138
+   Command Counter         = 71
+   Command Error Counter   = 142
    Last Action             = MM_SYM_LOOKUP
-   Memory Type             = MM_NOMEMTYPE
+   Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 0
-   File Name               = ''
+   Data Value              = 0x000000FF
+   Bytes Processed         = 112
+   File Name               = '/ram/fill10.dump'
 
 Test symbol dump with good filename but bad OS file 
 ----------------------------------------------------
 ERROR EVENT ID=49 Error dumping symbol table, OS_Status= 0xFFFFFFE5, File='IrrelevantFileName'
 MM HOUSEKEEPING DATA:
-   Command Counter         = 75
-   Command Error Counter   = 139
+   Command Counter         = 71
+   Command Error Counter   = 143
    Last Action             = MM_SYM_LOOKUP
-   Memory Type             = MM_NOMEMTYPE
+   Memory Type             = MM_MEM8
    Address                 = 0xB0000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 0
-   File Name               = ''
+   Data Value              = 0x000000FF
+   Bytes Processed         = 112
+   File Name               = '/ram/fill10.dump'
 
 Test symbol dump with good filename and successful return
 ---------------------------------------------------------
@@ -2925,13 +2930,13 @@ Test symbol dump with good filename and successful return
 1 'GoodSymName' - b0000000
 INFO EVENT ID=47 Symbol Table Dump to File Started: Name = 'GoodFileName'
 MM HOUSEKEEPING DATA:
-   Command Counter         = 76
-   Command Error Counter   = 139
+   Command Counter         = 72
+   Command Error Counter   = 143
    Last Action             = MM_SYMTBL_SAVE
-   Memory Type             = MM_NOMEMTYPE
-   Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
-   Bytes Processed         = 0
+   Memory Type             = MM_MEM8
+   Address                 = 0xB0000000
+   Data Value              = 0x000000FF
+   Bytes Processed         = 112
    File Name               = 'GoodFileName'
 
 
@@ -2940,344 +2945,344 @@ MM HOUSEKEEPING DATA:
 
 ***UTF MM CMD PIPE TESTS START***
 
-INFO EVENT ID=1 MM Initialized. Version 0.0.0.0
+INFO EVENT ID=1 MM Initialized. Version 2.4.0.0
 
  <mm_utf_cmds.in> ***START MM SB COMMAND TESTING***
  --------------------------------------------------
 
  <mm_utf_cmds.in> Housekeeping Request
  -------------------------------------
-< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:1889 c000 0001 0000 
+< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:8918 00c0 0100 0000 
 MM HOUSEKEEPING DATA:
    Command Counter         = 0
    Command Error Counter   = 0
    Last Action             = MM_NOACTION
    Memory Type             = MM_NOMEMTYPE
    Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
  <mm_utf_cmds.in> NOOP Command Test
  ----------------------------------
-< CMD: APID:0088 SEQ:0 LEN:8 FC:0 PKT:1888 c000 0001 0000 
-INFO EVENT ID=2 No-op command. Version 0.0.0.0
-< CMD: APID:0088 SEQ:0 LEN:8 FC:0 PKT:1888 c000 0001 0000 
-INFO EVENT ID=2 No-op command. Version 0.0.0.0
-< CMD: APID:0088 SEQ:0 LEN:8 FC:0 PKT:1888 c000 0001 0000 
-INFO EVENT ID=2 No-op command. Version 0.0.0.0
-< CMD: APID:0088 SEQ:0 LEN:8 FC:0 PKT:1888 c000 0001 0000 
-INFO EVENT ID=2 No-op command. Version 0.0.0.0
-< CMD: APID:0088 SEQ:0 LEN:8 FC:0 PKT:1888 c000 0001 0000 
-INFO EVENT ID=2 No-op command. Version 0.0.0.0
+< CMD: APID:0088 SEQ:0 LEN:8 FC:0 PKT:8818 00c0 0100 0000 
+INFO EVENT ID=2 No-op command. Version 2.4.0.0
+< CMD: APID:0088 SEQ:0 LEN:8 FC:0 PKT:8818 00c0 0100 0000 
+INFO EVENT ID=2 No-op command. Version 2.4.0.0
+< CMD: APID:0088 SEQ:0 LEN:8 FC:0 PKT:8818 00c0 0100 0000 
+INFO EVENT ID=2 No-op command. Version 2.4.0.0
+< CMD: APID:0088 SEQ:0 LEN:8 FC:0 PKT:8818 00c0 0100 0000 
+INFO EVENT ID=2 No-op command. Version 2.4.0.0
+< CMD: APID:0088 SEQ:0 LEN:8 FC:0 PKT:8818 00c0 0100 0000 
+INFO EVENT ID=2 No-op command. Version 2.4.0.0
 
  <mm_utf_cmds.in> Housekeeping Request
  -------------------------------------
-< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:1889 c000 0001 0000 
+< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:8918 00c0 0100 0000 
 MM HOUSEKEEPING DATA:
    Command Counter         = 5
    Command Error Counter   = 0
-   Last Action             = MM_NOACTION
+   Last Action             = 12
    Memory Type             = MM_NOMEMTYPE
    Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
  <mm_utf_cmds.in> NOOP Command With Invalid Length Test
  ------------------------------------------------------
-< CMD: APID:0088 SEQ:0 LEN:14 FC:0 PKT:1888 c000 0007 0000 1234 ffff 7fff 
+< CMD: APID:0088 SEQ:0 LEN:14 FC:0 PKT:8818 00c0 0700 0000 1234 ffff 7fff 
 ERROR EVENT ID=18 Invalid msg length: ID = 0x1888, CC = 0, Len = 14, Expected = 8
 
  <mm_utf_cmds.in> Housekeeping Request
  -------------------------------------
-< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:1889 c000 0001 0000 
+< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:8918 00c0 0100 0000 
 MM HOUSEKEEPING DATA:
    Command Counter         = 5
    Command Error Counter   = 1
    Last Action             = MM_NOACTION
    Memory Type             = MM_NOMEMTYPE
    Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
  <mm_utf_cmds.in> Housekeeping Request With Invalid Length Test
  --------------------------------------------------------------
-< CMD: APID:0089 SEQ:0 LEN:14 FC:0 PKT:1889 c000 0007 0000 1234 ffff 7fff 
+< CMD: APID:0089 SEQ:0 LEN:14 FC:0 PKT:8918 00c0 0700 0000 1234 ffff 7fff 
 ERROR EVENT ID=44 Invalid HK request msg length: ID = 0x1889, CC = 0, Len = 14, Expected = 8
 
  <mm_utf_cmds.in> Housekeeping Request
  -------------------------------------
-< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:1889 c000 0001 0000 
+< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:8918 00c0 0100 0000 
 MM HOUSEKEEPING DATA:
    Command Counter         = 5
    Command Error Counter   = 1
    Last Action             = MM_NOACTION
    Memory Type             = MM_NOMEMTYPE
    Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
  <mm_utf_cmds.in> Reset Counters Command Test
  --------------------------------------------
-< CMD: APID:0088 SEQ:0 LEN:8 FC:1 PKT:1888 c000 0001 0100 
+< CMD: APID:0088 SEQ:0 LEN:8 FC:1 PKT:8818 00c0 0100 0100 
 DEBUG EVENT ID=3 Reset counters command received
 
  <mm_utf_cmds.in> Housekeeping Request
  -------------------------------------
-< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:1889 c000 0001 0000 
+< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:8918 00c0 0100 0000 
 MM HOUSEKEEPING DATA:
    Command Counter         = 0
    Command Error Counter   = 0
-   Last Action             = MM_NOACTION
+   Last Action             = 13
    Memory Type             = MM_NOMEMTYPE
    Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
  <mm_utf_cmds.in> Reset Counters Command With Invalid Length Test
  ----------------------------------------------------------------
-< CMD: APID:0088 SEQ:0 LEN:14 FC:1 PKT:1888 c000 0007 0100 1234 ffff 7fff 
+< CMD: APID:0088 SEQ:0 LEN:14 FC:1 PKT:8818 00c0 0700 0100 1234 ffff 7fff 
 ERROR EVENT ID=18 Invalid msg length: ID = 0x1888, CC = 1, Len = 14, Expected = 8
 
  <mm_utf_cmds.in> Peek Command With Invalid Length Test
  ------------------------------------------------------
-< CMD: APID:0088 SEQ:0 LEN:8 FC:2 PKT:1888 c000 0001 0200 
+< CMD: APID:0088 SEQ:0 LEN:8 FC:2 PKT:8818 00c0 0100 0200 
 ERROR EVENT ID=18 Invalid msg length: ID = 0x1888, CC = 2, Len = 8, Expected = 80
 
  <mm_utf_cmds.in> Housekeeping Request
  -------------------------------------
-< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:1889 c000 0001 0000 
+< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:8918 00c0 0100 0000 
 MM HOUSEKEEPING DATA:
    Command Counter         = 0
    Command Error Counter   = 2
    Last Action             = MM_NOACTION
    Memory Type             = MM_NOMEMTYPE
    Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
  <mm_utf_cmds.in> Poke Command With Invalid Length Test
  ------------------------------------------------------
-< CMD: APID:0088 SEQ:0 LEN:8 FC:3 PKT:1888 c000 0001 0300 
+< CMD: APID:0088 SEQ:0 LEN:8 FC:3 PKT:8818 00c0 0100 0300 
 ERROR EVENT ID=18 Invalid msg length: ID = 0x1888, CC = 3, Len = 8, Expected = 84
 
  <mm_utf_cmds.in> Housekeeping Request
  -------------------------------------
-< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:1889 c000 0001 0000 
+< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:8918 00c0 0100 0000 
 MM HOUSEKEEPING DATA:
    Command Counter         = 0
    Command Error Counter   = 3
    Last Action             = MM_NOACTION
    Memory Type             = MM_NOMEMTYPE
    Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
  <mm_utf_cmds.in> Load With Interrupts Disabled Command With Invalid Length Test
  -------------------------------------------------------------------------------
-< CMD: APID:0088 SEQ:0 LEN:8 FC:4 PKT:1888 c000 0001 0400 
+< CMD: APID:0088 SEQ:0 LEN:8 FC:4 PKT:8818 00c0 0100 0400 
 ERROR EVENT ID=18 Invalid msg length: ID = 0x1888, CC = 4, Len = 8, Expected = 284
 
  <mm_utf_cmds.in> Housekeeping Request
  -------------------------------------
-< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:1889 c000 0001 0000 
+< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:8918 00c0 0100 0000 
 MM HOUSEKEEPING DATA:
    Command Counter         = 0
    Command Error Counter   = 4
    Last Action             = MM_NOACTION
    Memory Type             = MM_NOMEMTYPE
    Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
  <mm_utf_cmds.in> Load From File Command With Invalid Length Test
  ----------------------------------------------------------------
-< CMD: APID:0088 SEQ:0 LEN:8 FC:5 PKT:1888 c000 0001 0500 
+< CMD: APID:0088 SEQ:0 LEN:8 FC:5 PKT:8818 00c0 0100 0500 
 ERROR EVENT ID=18 Invalid msg length: ID = 0x1888, CC = 5, Len = 8, Expected = 72
 
  <mm_utf_cmds.in> Housekeeping Request
  -------------------------------------
-< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:1889 c000 0001 0000 
+< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:8918 00c0 0100 0000 
 MM HOUSEKEEPING DATA:
    Command Counter         = 0
    Command Error Counter   = 5
    Last Action             = MM_NOACTION
    Memory Type             = MM_NOMEMTYPE
    Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
  <mm_utf_cmds.in> Dump To File Command With Invalid Length Test
  --------------------------------------------------------------
-< CMD: APID:0088 SEQ:0 LEN:8 FC:6 PKT:1888 c000 0001 0600 
+< CMD: APID:0088 SEQ:0 LEN:8 FC:6 PKT:8818 00c0 0100 0600 
 ERROR EVENT ID=18 Invalid msg length: ID = 0x1888, CC = 6, Len = 8, Expected = 148
 
  <mm_utf_cmds.in> Housekeeping Request
  -------------------------------------
-< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:1889 c000 0001 0000 
+< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:8918 00c0 0100 0000 
 MM HOUSEKEEPING DATA:
    Command Counter         = 0
    Command Error Counter   = 6
    Last Action             = MM_NOACTION
    Memory Type             = MM_NOMEMTYPE
    Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
  <mm_utf_cmds.in> Dump In Event Message Command With Invalid Length Test
  -----------------------------------------------------------------------
-< CMD: APID:0088 SEQ:0 LEN:8 FC:7 PKT:1888 c000 0001 0700 
+< CMD: APID:0088 SEQ:0 LEN:8 FC:7 PKT:8818 00c0 0100 0700 
 ERROR EVENT ID=18 Invalid msg length: ID = 0x1888, CC = 7, Len = 8, Expected = 80
 
  <mm_utf_cmds.in> Housekeeping Request
  -------------------------------------
-< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:1889 c000 0001 0000 
+< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:8918 00c0 0100 0000 
 MM HOUSEKEEPING DATA:
    Command Counter         = 0
    Command Error Counter   = 7
    Last Action             = MM_NOACTION
    Memory Type             = MM_NOMEMTYPE
    Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
  <mm_utf_cmds.in> Memory Fill Command With Invalid Length Test
  -------------------------------------------------------------
-< CMD: APID:0088 SEQ:0 LEN:8 FC:8 PKT:1888 c000 0001 0800 
+< CMD: APID:0088 SEQ:0 LEN:8 FC:8 PKT:8818 00c0 0100 0800 
 ERROR EVENT ID=18 Invalid msg length: ID = 0x1888, CC = 8, Len = 8, Expected = 88
 
  <mm_utf_cmds.in> Housekeeping Request
  -------------------------------------
-< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:1889 c000 0001 0000 
+< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:8918 00c0 0100 0000 
 MM HOUSEKEEPING DATA:
    Command Counter         = 0
    Command Error Counter   = 8
    Last Action             = MM_NOACTION
    Memory Type             = MM_NOMEMTYPE
    Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
  <mm_utf_cmds.in> Symbol Lookup Command With Invalid Length Test
  ---------------------------------------------------------------
-< CMD: APID:0088 SEQ:0 LEN:8 FC:9 PKT:1888 c000 0001 0900 
+< CMD: APID:0088 SEQ:0 LEN:8 FC:9 PKT:8818 00c0 0100 0900 
 ERROR EVENT ID=18 Invalid msg length: ID = 0x1888, CC = 9, Len = 8, Expected = 72
 
  <mm_utf_cmds.in> Symbol Table Dump Command With Invalid Length Test
  -------------------------------------------------------------------
-< CMD: APID:0088 SEQ:0 LEN:8 FC:10 PKT:1888 c000 0001 0a00 
+< CMD: APID:0088 SEQ:0 LEN:8 FC:10 PKT:8818 00c0 0100 0a00 
 ERROR EVENT ID=18 Invalid msg length: ID = 0x1888, CC = 10, Len = 8, Expected = 72
 
  <mm_utf_cmds.in> EEPROM Write Enable Command With Invalid Length Test
  ---------------------------------------------------------------------
-< CMD: APID:0088 SEQ:0 LEN:8 FC:11 PKT:1888 c000 0001 0b00 
+< CMD: APID:0088 SEQ:0 LEN:8 FC:11 PKT:8818 00c0 0100 0b00 
 ERROR EVENT ID=18 Invalid msg length: ID = 0x1888, CC = 11, Len = 8, Expected = 12
 
  <mm_utf_cmds.in> EEPROM Write Disable Command With Invalid Length Test
  ----------------------------------------------------------------------
-< CMD: APID:0088 SEQ:0 LEN:8 FC:12 PKT:1888 c000 0001 0c00 
+< CMD: APID:0088 SEQ:0 LEN:8 FC:12 PKT:8818 00c0 0100 0c00 
 ERROR EVENT ID=18 Invalid msg length: ID = 0x1888, CC = 12, Len = 8, Expected = 12
 
  <mm_utf_cmds.in> Housekeeping Request
  -------------------------------------
-< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:1889 c000 0001 0000 
+< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:8918 00c0 0100 0000 
 MM HOUSEKEEPING DATA:
    Command Counter         = 0
    Command Error Counter   = 12
    Last Action             = MM_NOACTION
    Memory Type             = MM_NOMEMTYPE
    Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
  <mm_utf_cmds.in> Invalid Command ID Tests
  --------------------------------------------
-< CMD: APID:0088 SEQ:0 LEN:8 FC:10 PKT:1888 c000 0001 0a00 
+< CMD: APID:0088 SEQ:0 LEN:8 FC:10 PKT:8818 00c0 0100 0a00 
 ERROR EVENT ID=18 Invalid msg length: ID = 0x1888, CC = 10, Len = 8, Expected = 72
-< CMD: APID:0088 SEQ:0 LEN:8 FC:11 PKT:1888 c000 0001 0b00 
+< CMD: APID:0088 SEQ:0 LEN:8 FC:11 PKT:8818 00c0 0100 0b00 
 ERROR EVENT ID=18 Invalid msg length: ID = 0x1888, CC = 11, Len = 8, Expected = 12
-< CMD: APID:0088 SEQ:0 LEN:8 FC:12 PKT:1888 c000 0001 0c00 
+< CMD: APID:0088 SEQ:0 LEN:8 FC:12 PKT:8818 00c0 0100 0c00 
 ERROR EVENT ID=18 Invalid msg length: ID = 0x1888, CC = 12, Len = 8, Expected = 12
-< CMD: APID:0088 SEQ:0 LEN:8 FC:13 PKT:1888 c000 0001 0d00 
+< CMD: APID:0088 SEQ:0 LEN:8 FC:13 PKT:8818 00c0 0100 0d00 
 ERROR EVENT ID=17 Invalid ground command code: ID = 0x1888, CC = 13
-< CMD: APID:0088 SEQ:0 LEN:8 FC:14 PKT:1888 c000 0001 0e00 
+< CMD: APID:0088 SEQ:0 LEN:8 FC:14 PKT:8818 00c0 0100 0e00 
 ERROR EVENT ID=17 Invalid ground command code: ID = 0x1888, CC = 14
 
  <mm_utf_cmds.in> Housekeeping Request
  -------------------------------------
-< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:1889 c000 0001 0000 
+< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:8918 00c0 0100 0000 
 MM HOUSEKEEPING DATA:
    Command Counter         = 0
    Command Error Counter   = 17
    Last Action             = MM_NOACTION
    Memory Type             = MM_NOMEMTYPE
    Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
  <mm_utf_cmds.in> Invalid Message ID Test
  --------------------------------------------
-< TLM: APID:00ff SEQ:0 LEN:8 PKT:00ff c000 0001 0100 
+< TLM: APID:00ff SEQ:0 LEN:8 PKT:ff00 00c0 0100 0100 
 ERROR EVENT ID=16 Invalid command pipe message ID: 0xFF
 
  <mm_utf_cmds.in> Housekeeping Request
  -------------------------------------
-< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:1889 c000 0001 0000 
+< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:8918 00c0 0100 0000 
 MM HOUSEKEEPING DATA:
    Command Counter         = 0
    Command Error Counter   = 18
    Last Action             = MM_NOACTION
    Memory Type             = MM_NOMEMTYPE
    Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
  <mm_utf_cmds.in> EEPROM Write Enable Command With Bank = 1
  ----------------------------------------------------------
-< CMD: APID:0088 SEQ:0 LEN:12 FC:11 PKT:1888 c000 0005 0b00 0001 0000 
+< CMD: APID:0088 SEQ:0 LEN:12 FC:11 PKT:8818 00c0 0500 0b00 0001 0000 
 INFO EVENT ID=51 EEPROM bank 1 write enabled, cFE_Status= 0x0
 
  <mm_utf_cmds.in> Housekeeping Request
  --------------------
-< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:1889 c000 0001 0000 
+< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:8918 00c0 0100 0000 
 MM HOUSEKEEPING DATA:
    Command Counter         = 1
    Command Error Counter   = 18
    Last Action             = MM_EEPROMWRITE_ENA
    Memory Type             = MM_EEPROM
    Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
  <mm_utf_cmds.in> EEPROM Write Disable Command With Bank = 1
  -----------------------------------------------------------
-< CMD: APID:0088 SEQ:0 LEN:12 FC:12 PKT:1888 c000 0005 0c00 0001 0000 
+< CMD: APID:0088 SEQ:0 LEN:12 FC:12 PKT:8818 00c0 0500 0c00 0001 0000 
 INFO EVENT ID=53 EEPROM bank 1 write disabled, cFE_Status= 0x0
 
  <mm_utf_cmds.in> Housekeeping Request
  -------------------------------------
-< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:1889 c000 0001 0000 
+< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:8918 00c0 0100 0000 
 MM HOUSEKEEPING DATA:
    Command Counter         = 2
    Command Error Counter   = 18
    Last Action             = MM_EEPROMWRITE_DIS
    Memory Type             = MM_EEPROM
    Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
@@ -3288,50 +3293,50 @@ UTF Info: Return value for cFE PSP Api #6 set to ffffffff
 
  <mm_utf_cmds.in> Housekeeping Request
  -------------------------------------
-< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:1889 c000 0001 0000 
+< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:8918 00c0 0100 0000 
 MM HOUSEKEEPING DATA:
    Command Counter         = 2
    Command Error Counter   = 18
    Last Action             = MM_EEPROMWRITE_DIS
    Memory Type             = MM_EEPROM
    Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
  <mm_utf_cmds.in> EEPROM Write Enable Command With Bank = 1
  ----------------------------------------------------------
-< CMD: APID:0088 SEQ:0 LEN:12 FC:11 PKT:1888 c000 0005 0b00 0001 0000 
+< CMD: APID:0088 SEQ:0 LEN:12 FC:11 PKT:8818 00c0 0500 0b00 0001 0000 
 ERROR EVENT ID=52 Error requesting EEPROM bank 1 write enable, cFE_Status= 0xFFFFFFFF
 
  <mm_utf_cmds.in> Housekeeping Request
  --------------------
-< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:1889 c000 0001 0000 
+< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:8918 00c0 0100 0000 
 MM HOUSEKEEPING DATA:
    Command Counter         = 2
    Command Error Counter   = 19
-   Last Action             = MM_EEPROMWRITE_DIS
-   Memory Type             = MM_EEPROM
+   Last Action             = MM_NOACTION
+   Memory Type             = MM_NOMEMTYPE
    Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
  <mm_utf_cmds.in> EEPROM Write Disable Command With Bank = 1
  -----------------------------------------------------------
-< CMD: APID:0088 SEQ:0 LEN:12 FC:12 PKT:1888 c000 0005 0c00 0001 0000 
+< CMD: APID:0088 SEQ:0 LEN:12 FC:12 PKT:8818 00c0 0500 0c00 0001 0000 
 ERROR EVENT ID=54 Error requesting EEPROM bank 1 write disable, cFE_Status= 0xFFFFFFFF
 
  <mm_utf_cmds.in> Housekeeping Request
  -------------------------------------
-< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:1889 c000 0001 0000 
+< CMD: APID:0089 SEQ:0 LEN:8 FC:0 PKT:8918 00c0 0100 0000 
 MM HOUSEKEEPING DATA:
    Command Counter         = 2
    Command Error Counter   = 20
-   Last Action             = MM_EEPROMWRITE_DIS
-   Memory Type             = MM_EEPROM
+   Last Action             = MM_NOACTION
+   Memory Type             = MM_NOMEMTYPE
    Address                 = 0x00000000
-   Fill Pattern            = 0x00000000
+   Data Value              = 0x00000000
    Bytes Processed         = 0
    File Name               = ''
 
@@ -3343,9 +3348,9 @@ UTF Info: Return value for cFE PSP Api #5 set to 0
  <mm_utf_cmds.in> SB error\app exit test
  -----------------------------------------
 UTF Info: Return value for CFE SB Api #5 set to ca000006
-< CMD: APID:0088 SEQ:0 LEN:8 FC:0 PKT:1888 c000 0001 0000 
+< CMD: APID:0088 SEQ:0 LEN:8 FC:0 PKT:8818 00c0 0100 0000 
 ERROR EVENT ID=15 SB Pipe Read Error, App will exit. RC = 0xCA000006
-SysLog:2008-102-17:55:12.00000 Application MM called CFE_ES_ExitApp
+SysLog:1980-001-00:00:00.00000 Application MM called CFE_ES_ExitApp
 
 ***UTF MM CMD PIPE TESTS END***
 
@@ -3356,19 +3361,19 @@ SysLog:2008-102-17:55:12.00000 Application MM called CFE_ES_ExitApp
 Test App Init Error conditions 
 -------------------------------
 UTF Info: Return value for CFE EVS Api #0 set to c2000003
-SysLog:2116-023-01:25:19.99999 MM App: Error Registering For Event Services, RC = 0xC2000003
-SysLog:2116-023-01:17:48.99999 Application MM called CFE_ES_ExitApp
+SysLog:1980-001-00:00:00.00000 MM App: Error Registering For Event Services, RC = 0xC2000003
+SysLog:1980-001-00:00:00.00000 Application MM called CFE_ES_ExitApp
 UTF Info: Return code for CFE EVS Api #0 returned to default
 UTF Info: Return value for CFE SB Api #0 set to ca000004
-SysLog:2116-023-01:25:19.99999 MM App: Error Creating SB Pipe, RC = 0xCA000004
-SysLog:2116-023-01:17:48.99999 Application MM called CFE_ES_ExitApp
+SysLog:1980-001-00:00:00.00000 MM App: Error Creating SB Pipe, RC = 0xCA000004
+SysLog:1980-001-00:00:00.00000 Application MM called CFE_ES_ExitApp
 UTF Info: Return code for CFE SB Api #0 returned to default
 UTF Info: Return value for CFE SB Api #2 set to ca000009
-SysLog:2116-023-01:25:19.99999 MM App: Error Subscribing to HK Request, RC = 0xCA000009
-SysLog:2116-023-01:17:48.99999 Application MM called CFE_ES_ExitApp
+SysLog:1980-001-00:00:00.00000 MM App: Error Subscribing to HK Request, RC = 0xCA000009
+SysLog:1980-001-00:00:00.00000 Application MM called CFE_ES_ExitApp
 UTF Info: Return code for CFE SB Api #2 returned to default
-SysLog:2116-023-01:25:19.99999 MM App: Error Subscribing to MM Command, RC = 0xCA000009
-SysLog:2116-023-01:17:48.99999 Application MM called CFE_ES_ExitApp
+SysLog:1980-001-00:00:00.00000 MM App: Error Subscribing to MM Command, RC = 0xCA000009
+SysLog:1980-001-00:00:00.00000 Application MM called CFE_ES_ExitApp
 
 ***UTF MM APP INIT TESTS END***
 
