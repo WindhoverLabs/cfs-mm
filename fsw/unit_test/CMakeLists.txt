@@ -42,4 +42,5 @@ add_test(NAME mm-ut
     -P ${CMAKE_CURRENT_SOURCE_DIR}/runtest.cmake)
 
 # Copy input files to build directory
+file(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/ram)
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/mm_utf_cmds.in ${CMAKE_CURRENT_BINARY_DIR} COPYONLY)
