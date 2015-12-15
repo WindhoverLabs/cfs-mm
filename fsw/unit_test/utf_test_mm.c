@@ -2,7 +2,7 @@
 ** File:
 **   $Id: utf_test_mm.c 1.14 2015/03/20 14:16:46EDT lwalling Exp  $
 **
-**   Copyright © 2007-2014 United States Government as represented by the 
+**   Copyright ï¿½ 2007-2014 United States Government as represented by the 
 **   Administrator of the National Aeronautics and Space Administration. 
 **   All Other Rights Reserved.  
 **
@@ -538,13 +538,13 @@ boolean CreateTruncCFEHdrLoadFile(char FileName[])
 /* Creates a load file with a truncated MM secondary file header   */
 /*                                                                 */
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-boolean CreateTruncMMHdrLoadFile(char                     FileName[], 
+boolean CreateTruncMMHdrLoadFile(char                     FileName[],
                                  MM_LoadDumpFileHeader_t *MMFileHdr)
 {
    boolean Success = TRUE;
-   int FileHandle;
-   int BytesWritten;
-   CFE_FS_Header_t   CFEFileHdr;
+   int FileHandle = 0;
+   int BytesWritten = 0;
+   CFE_FS_Header_t   CFEFileHdr = {};
    
    /* Open the file */
    FileHandle = creat(FileName, 0755);
@@ -605,8 +605,8 @@ boolean CreateLoadFile(char                     FileName[],
                        int32                    DataSetBytes)
 {
    boolean Success = TRUE;
-   int FileHandle;
-   int BytesWritten;
+   int FileHandle = 0;
+   int BytesWritten = 0;
    CFE_FS_Header_t   CFEFileHdr;
    
    /* Open the file */
@@ -683,8 +683,8 @@ boolean CreateBigLoadFile(char                     FileName[],
 {
    boolean Success = TRUE;
    int    i;
-   int    FileHandle;
-   int    BytesWritten;
+   int FileHandle = 0;
+   int BytesWritten = 0;
    CFE_FS_Header_t   CFEFileHdr;
    uint32 CRCValue = 0;
    

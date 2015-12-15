@@ -2,7 +2,7 @@
 ** File:
 **   $Id: ut_mm_test_loadfromfile.c 1.3 2015/03/02 14:27:08EST sstrege Exp  $
 **
-**   Copyright © 2007-2014 United States Government as represented by the 
+**   Copyright ï¿½ 2007-2014 United States Government as represented by the 
 **   Administrator of the National Aeronautics and Space Administration. 
 **   All Other Rights Reserved.  
 **
@@ -109,8 +109,8 @@ extern int32   OS_ReadZero_Hook      (uint32 filedes, void* buffer, uint32 nbyte
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 void Test_LoadFromFile(void)
 {
-   MM_LoadMemFromFileCmd_t  CmdMsg;
-   MM_LoadDumpFileHeader_t  FileHdr;
+   MM_LoadMemFromFileCmd_t  CmdMsg = {};
+   MM_LoadDumpFileHeader_t  FileHdr = {};
    boolean RetStatus;
    
    /* Setup the test message header */ 
